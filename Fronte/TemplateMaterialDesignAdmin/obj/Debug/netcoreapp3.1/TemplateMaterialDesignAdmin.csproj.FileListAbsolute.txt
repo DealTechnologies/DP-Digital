@@ -106,3 +106,12 @@ C:\Users\l_san\Documents\GitHub\DP-Digital\Fronte\TemplateMaterialDesignAdmin\ob
 C:\Users\l_san\Documents\GitHub\DP-Digital\Fronte\TemplateMaterialDesignAdmin\obj\Debug\netcoreapp3.1\TemplateMaterialDesignAdmin.csprojAssemblyReference.cache
 C:\Users\l_san\Documents\GitHub\DP-Digital\Fronte\TemplateMaterialDesignAdmin\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\l_san\Documents\GitHub\DP-Digital\Fronte\TemplateMaterialDesignAdmin\bin\Debug\netcoreapp3.1\Flunt.dll
+C:\Users\l_san\Documents\GitHub\DP-Digital\Fronte\TemplateMaterialDesignAdmin\bin\Debug\netcoreapp3.1\Auth0.AuthenticationApi.dll
+C:\Users\l_san\Documents\GitHub\DP-Digital\Fronte\TemplateMaterialDesignAdmin\bin\Debug\netcoreapp3.1\Auth0.Core.dll
+C:\Users\l_san\Documents\GitHub\DP-Digital\Fronte\TemplateMaterialDesignAdmin\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\l_san\Documents\GitHub\DP-Digital\Fronte\TemplateMaterialDesignAdmin\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\l_san\Documents\GitHub\DP-Digital\Fronte\TemplateMaterialDesignAdmin\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\l_san\Documents\GitHub\DP-Digital\Fronte\TemplateMaterialDesignAdmin\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\l_san\Documents\GitHub\DP-Digital\Fronte\TemplateMaterialDesignAdmin\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\l_san\Documents\GitHub\DP-Digital\Fronte\TemplateMaterialDesignAdmin\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\l_san\Documents\GitHub\DP-Digital\Fronte\TemplateMaterialDesignAdmin\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
