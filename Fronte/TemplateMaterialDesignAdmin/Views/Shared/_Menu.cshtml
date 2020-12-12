@@ -1,48 +1,23 @@
 ﻿<div class="menu">
     <ul class="list">
-        <li class="header">Menu principal</li>
-        <li class="active">
+        <li class="header">@Context.User.Identity.Name</li>
+        <li>
             <a href="@Url.Action("Index", "Home")">
                 <i class="material-icons">home</i>
-                <span>Home</span>
+                <span>Principal</span>
             </a>
         </li>
         <li>
-            <a href="javascript:void(0);" class="menu-toggle">
-                <i class="material-icons">trending_down</i>
-                <span>Multi Level Menu</span>
+            <a href="@Url.Action("Index", "DadoPessoal")">
+                <i class="material-icons">emoji_people</i>
+                <span>Deal Maker</span>
             </a>
-            <ul class="ml-menu">
-                <li>
-                    <a href="javascript:void(0);">
-                        <span>Menu Item 1</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" class="menu-toggle">
-                        <span>Menu Item 2</span>
-                    </a>
-                    <ul class="ml-menu">
-                        <li>
-                            <a href="javascript:void(0);">
-                                <span>Submenu 1 - Nível 1</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="menu-toggle">
-                                <span>Submenu 2 - Nível 1</span>
-                            </a>
-                            <ul class="ml-menu">
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        <span>Submenu 3 - Nível 2</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+        </li>
+        <li>
+            <a  href="@Url.Action("Index", "GestaoAtividade")">
+                <i class="material-icons">more_time</i>
+                <span>Gestão de Atividades</span>
+            </a>
         </li>
     </ul>
 </div>
