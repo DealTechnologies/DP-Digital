@@ -444,27 +444,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\l_san\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\l_san\\Documents\\GitHub\\DP-Digital\\Fronte\\TemplateMaterialDesignAdmin\\TemplateMaterialDesignAdmin.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\DP-Digital\\Fronte\\TemplateMaterialDesignAdmin\\TemplateMaterialDesignAdmin.csproj",
       "projectName": "TemplateMaterialDesignAdmin",
-      "projectPath": "C:\\Users\\l_san\\Documents\\GitHub\\DP-Digital\\Fronte\\TemplateMaterialDesignAdmin\\TemplateMaterialDesignAdmin.csproj",
-      "packagesPath": "C:\\Users\\l_san\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\l_san\\Documents\\GitHub\\DP-Digital\\Fronte\\TemplateMaterialDesignAdmin\\obj\\",
+      "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\DP-Digital\\Fronte\\TemplateMaterialDesignAdmin\\TemplateMaterialDesignAdmin.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\DP-Digital\\Fronte\\TemplateMaterialDesignAdmin\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\l_san\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
