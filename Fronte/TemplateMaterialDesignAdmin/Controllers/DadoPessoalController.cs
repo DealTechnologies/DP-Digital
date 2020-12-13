@@ -7,6 +7,22 @@ namespace TemplateMaterialDesignAdmin.Controllers
         public IActionResult Index()
         {
             return View();
+
+        }
+        
+        public IActionResult Nacionalidade()
+        {
+            return View();
+        }
+        
+        public IActionResult InfoAdcionais()
+        {
+            return View();
+        } 
+        
+        public IActionResult Dependentes()
+        {
+            return View();
         }
     }
 }

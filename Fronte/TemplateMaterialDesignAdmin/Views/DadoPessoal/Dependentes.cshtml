@@ -1,0 +1,123 @@
+﻿
+
+
+
+<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="header">
+                <h2>DEAL MAKER2</h2>
+            </div>
+            <div class="body">
+                <form id="wizard_horizontal" role="application" class="wizard clearfix">
+                    <div class="steps clearfix">
+                        <ul role="tablist">
+
+                            <li role="tab" aria-disabled="false" class="disabled" aria-disabled:"true">
+                                <a id="wizard_horizontal-t-0" aria-controls="wizard_horizontal-p-0" asp-action="Index">
+                                    <span class="current-info audible">current step: </span>
+                                    Dados Pessoais
+                                </a>
+                            </li>
+
+                            <li role="tab" aria-disabled="false" class="disabled" aria-disabled:"true">
+                                <a id="wizard_horizontal-t-0" aria-controls="wizard_horizontal-p-1" asp-action="Nacionalidade">
+                                    <span class="current-info audible">current step: </span>
+                                    Nacionalidade
+                                </a>
+                            </li>
+                            <li role="tab" aria-disabled="false" class="disabled" aria-disabled:"true">
+                                <a id="wizard_horizontal-t-0" aria-controls="wizard_horizontal-p-2" asp-action="InfoAdcionais">
+                                    <span class="current-info audible">current step: </span>
+                                    Informações Adicionais
+                                </a>
+                            </li>
+
+                            <li role="tab" class="first current" aria-disabled="false" aria-selected="true">
+                                <a id="wizard_horizontal-t-0" aria-controls="wizard_horizontal-p-0" asp-action="Dependentes">
+                                    <span class="current-info audible">current step: </span>
+                                    Dependentes
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content clearfix">
+                        <div class="content clearfix">
+                            <button style="position:relative ; float:right ; background-color: #8EB138 " type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+ Adicionar Dependente</button>
+                        </div>
+                        <div class="table">
+
+                            <table>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Dependente</th>
+                                    <th>Data</th>
+                                    <th>Nacionalidade</th>
+
+                                </tr>
+                                <tr>
+                                    <td>Alfreds Futterkiste</td>
+                                    <td>filho</td>
+                                    <td>13/12/2020</td>
+                                    <td>Brasileiro</td>
+                                    <td><button>Ver</button></td>
+                                    <td><button>Excluir</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Alfreds Futterkiste</td>
+                                    <td>filho</td>
+                                    <td>13/12/2020</td>
+                                    <td>Brasileiro</td>
+                                    <td><button>Ver</button></td>
+                                    <td><button>Excluir</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Alfreds Futterkiste</td>
+                                    <td>filho</td>
+                                    <td>13/12/2020</td>
+                                    <td>Brasileiro</td>
+                                    <td><button>Ver</button></td>
+                                    <td><button>Excluir</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Alfreds Futterkiste</td>
+                                    <td>filho</td>
+                                    <td>13/12/2020</td>
+                                    <td>Brasileiro</td>
+                                    <td><button>Ver</button></td>
+                                    <td><button>Excluir</button></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Modal Header</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>This is a small modal.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="actions clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

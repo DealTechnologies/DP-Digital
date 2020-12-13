@@ -1,0 +1,84 @@
+﻿<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="header">
+                <h2>DEAL MAKER2</h2>
+            </div>
+            <div class="body">
+                <form id="wizard_horizontal" role="application" class="wizard clearfix">
+                    <div class="steps clearfix">
+                        <ul role="tablist">
+
+                            <li role="tab" aria-disabled="false" class="disabled" aria-disabled:"true">
+                                <a id="wizard_horizontal-t-0" aria-controls="wizard_horizontal-p-0" asp-action="Index">
+                                    <span class="current-info audible">current step: </span>
+                                    Dados Pessoais
+                                </a>
+                            </li>
+                            
+                            <li role="tab" aria-disabled="false" class="disabled" aria-disabled:"true">
+                                <a id="wizard_horizontal-t-0" aria-controls="wizard_horizontal-p-1" asp-action="Nacionalidade">
+                                    <span class="current-info audible">current step: </span>
+                                    Nacionalidade
+                                </a>
+                            </li>
+                            <li role="tab" class="first current" aria-disabled="false" aria-selected="true">
+                                <a id="wizard_horizontal-t-0" aria-controls="wizard_horizontal-p-2" asp-action="InfoAdcionais">
+                                    <span class="current-info audible">current step: </span>
+                                    Informações Adicionais
+                                </a>
+                            </li>
+                            <li role="tab" aria-disabled="false" class="disabled" aria-disabled:"true">
+                                <a id="wizard_horizontal-t-0" href="#wizard_horizontal-h-3" aria-controls="wizard_horizontal-p-0">
+                                    <span class="current-info audible">current step: </span>
+                                    Dependentes
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content clearfix">
+                        <div class="body">
+                            <div class="row clearfix">
+                                <div class="col-sm-4">
+                                    <label>Linkedin</label>
+                                    <div class="form-group">
+                                        <form action="/action_page.php">
+                                            <label for="fname">http://linkedin.com/in/</label>
+                                            <input type="text" id="fname" name="fname"><br><br>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label>Facebook</label>
+                                    <div class="form-group">
+                                        <form action="/action_page.php">
+                                            <label for="fname">http://facebook.com/</label>
+                                            <input type="text" id="fname" name="fname"><br><br>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row clearfix">
+                                <div class="col-sm-4">
+                                    <label>Como conheceu a empresa</label>
+                                    <div class="form-group">
+                                        <select class="form-control show-tick">
+                                            <option value="linkedin">linkedin</option>
+                                            <option value="Amigos">Amigos</option>
+                                            <option value="email">email</option>
+                                            <option value="...">...</option>
+
+                                        </select>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actions clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
