@@ -10,10 +10,6 @@ namespace TemplateMaterialDesignAdmin.Controllers
 
         }
         
-        public IActionResult Nacionalidade()
-        {
-            return View();
-        }
         
         public IActionResult InfoAdcionais()
         {
