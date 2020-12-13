@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\regin\\Desktop\\dealmaker\\DP-Digital\\Fronte\\TemplateMaterialDesignAdmin\\TemplateMaterialDesignAdmin.csproj": {}
+    "C:\\Users\\PC\\Documents\\GitHub\\DP-Digital\\Fronte\\TemplateMaterialDesignAdmin\\TemplateMaterialDesignAdmin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\regin\\Desktop\\dealmaker\\DP-Digital\\Fronte\\TemplateMaterialDesignAdmin\\TemplateMaterialDesignAdmin.csproj": {
+    "C:\\Users\\PC\\Documents\\GitHub\\DP-Digital\\Fronte\\TemplateMaterialDesignAdmin\\TemplateMaterialDesignAdmin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\regin\\Desktop\\dealmaker\\DP-Digital\\Fronte\\TemplateMaterialDesignAdmin\\TemplateMaterialDesignAdmin.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\DP-Digital\\Fronte\\TemplateMaterialDesignAdmin\\TemplateMaterialDesignAdmin.csproj",
         "projectName": "TemplateMaterialDesignAdmin",
-        "projectPath": "C:\\Users\\regin\\Desktop\\dealmaker\\DP-Digital\\Fronte\\TemplateMaterialDesignAdmin\\TemplateMaterialDesignAdmin.csproj",
-        "packagesPath": "C:\\Users\\regin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\regin\\Desktop\\dealmaker\\DP-Digital\\Fronte\\TemplateMaterialDesignAdmin\\obj\\",
+        "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\DP-Digital\\Fronte\\TemplateMaterialDesignAdmin\\TemplateMaterialDesignAdmin.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\DP-Digital\\Fronte\\TemplateMaterialDesignAdmin\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\regin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -30,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -41,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Auth0.AuthenticationApi": {
               "target": "Package",
@@ -53,10 +51,6 @@
             "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
               "target": "Package",
               "version": "[3.1.0, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[3.1.4, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -73,6 +67,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.10, 3.1.10]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -81,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

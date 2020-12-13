@@ -24,5 +24,10 @@ namespace TemplateMaterialDesignAdmin.Controllers
         {
             return View();
         }
+
+        public IActionResult Nacionalidade()
+        {
+            return View();
+        }
     }
 }
