@@ -20,5 +20,7 @@ namespace DP_Digital.Domain.Colaboradores.Interfaces
 
         Task<Colaborador> ObterPorCpfAsync(string cpf);
 
+        Task<List<Colaborador>> ObterTodosAsync();
+
     }
 }

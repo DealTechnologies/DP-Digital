@@ -62,6 +62,28 @@ namespace DP_Digital.Domain.Colaboradores.Handlers
             }
         }
 
+
+        public async Task<ColaboradorCommandResult> ObterTodos()
+        {
+            try
+            {
+                var retorno = await _colaboradorRepository.ObterTodosAsync();
+
+                if (retorno == null)
+                {
+                    AddNotification("Candidato", "Não existe candidato com esse ID");
+                    return null;
+                }
+
+                return new ColaboradorCommandResult("Consulta Realizada com sucesso.", retorno);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
         public async Task<ColaboradorCommandResult> ObterPorNomeAsync(string nome)
         {
             try

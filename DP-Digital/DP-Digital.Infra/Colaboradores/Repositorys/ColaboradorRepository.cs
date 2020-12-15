@@ -1,6 +1,7 @@
 ﻿using DP_Digital.Domain.Colaboradores.Interfaces;
 using DP_Digital.Domain.Colaboradores.Models;
 using DP_Digital.Infra.Candidatos.Contexts;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -77,6 +78,16 @@ namespace DP_Digital.Infra.Colaboradores.Repositorys
             var retorno = await collection.FindAsync<Colaborador>(filter);
 
             return retorno.FirstOrDefault();
+        }
+
+
+        public async Task<List<Colaborador>> ObterTodosAsync()
+        {
+            var collection = _mongoDBContext.MongoDBConexao.GetCollection<Colaborador>(_collection);
+
+            var retorno = await collection.FindAsync<Colaborador>(new BsonDocument());
+
+            return retorno.ToList();
         }
     }
 }

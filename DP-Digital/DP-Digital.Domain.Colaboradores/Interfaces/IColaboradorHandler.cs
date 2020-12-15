@@ -17,6 +17,8 @@ namespace DP_Digital.Domain.Colaboradores.Interfaces
         Task<ColaboradorCommandResult> ObterPorCpfAsync(string cpf);
 
         public IReadOnlyCollection<Notification> Notifications { get; }
+
+        Task<ColaboradorCommandResult> ObterTodos();
     }
 }
 

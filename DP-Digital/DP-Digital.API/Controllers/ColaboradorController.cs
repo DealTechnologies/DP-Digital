@@ -70,6 +70,32 @@ namespace DP_Digital.API.Controllers
             }
         }
 
+
+        [HttpGet]
+        [Route("v1/Colaborador/ObterTodos")]
+        public async Task<IActionResult> ObterTodos()
+        {
+            try
+            {
+                var result = await _colaboradorHandler.ObterTodos();
+
+
+                if (result is null)
+                {
+                    ColaboradorCommandResult retorno = new ColaboradorCommandResult("Apresentou um erro", _colaboradorHandler.Notifications);
+                    return BadRequest(retorno);
+                }
+
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+
+                ColaboradorCommandResult retorno = new ColaboradorCommandResult("Erro interno no servidor", new List<Notification>() { new Notification($"{ex.Message}", "InternalServerError") });
+                return StatusCode(StatusCodes.Status500InternalServerError, retorno);
+            }
+        }
+
         [HttpPost]
         [Route("v1/Colaborador/Inserir")]
         public async Task<IActionResult> InserirAsync([FromBody] ColaboradorInserirCommand parametros)
