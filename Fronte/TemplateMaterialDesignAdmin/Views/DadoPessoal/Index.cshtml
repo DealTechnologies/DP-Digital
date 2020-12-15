@@ -9,25 +9,25 @@
                     <div class="steps clearfix">
                         <ul role="tablist">
                             <li role="tab" class="first current" aria-disabled="false" aria-selected="true">
-                                <a id="wizard_horizontal-t-0" href="#wizard_horizontal-h-0" aria-controls="wizard_horizontal-p-0">
+                                <a id="wizard_horizontal-t-0" aria-controls="wizard_horizontal-p-0" asp-action="Index">
                                     <span class="current-info audible">current step: </span>
                                     Dados Pessoais
                                 </a>
                             </li>
                             <li role="tab" aria-disabled="false" class="disabled" aria-disabled:"true">
-                                <a id="wizard_horizontal-t-0"  aria-controls="wizard_horizontal-p-0" asp-action="Nacionalidade">
+                                <a id="wizard_horizontal-t-0" aria-controls="wizard_horizontal-p-0" asp-action="Nacionalidade">
                                     <span class="current-info audible">current step: </span>
                                     Nacionalidade
                                 </a>
                             </li>
                             <li role="tab" aria-disabled="false" class="disabled" aria-disabled:"true">
-                                <a id="wizard_horizontal-t-0"  aria-controls="wizard_horizontal-p-0" >
+                                <a id="wizard_horizontal-t-0" aria-controls="wizard_horizontal-p-0" asp-action="InfoAdcionais">
                                     <span class="current-info audible">current step: </span>
                                     Informações Adicionais
                                 </a>
                             </li>
                             <li role="tab" aria-disabled="false" class="disabled" aria-disabled:"true">
-                                <a id="wizard_horizontal-t-0" href="#wizard_horizontal-h-3" aria-controls="wizard_horizontal-p-0">
+                                <a id="wizard_horizontal-t-0" aria-controls="wizard_horizontal-p-0" asp-action="Dependentes">
                                     <span class="current-info audible">current step: </span>
                                     Dependentes
                                 </a>
@@ -118,7 +118,7 @@
                                 <div class="col-sm-4">
                                     <label>Gênero</label>
                                     <div class="form-group">
-                                        <select class="form-control show-tick">
+                                        <select>
                                             <option value="">Selecione</option>
                                             <option value="M">Masculino</option>
                                             <option value="F">Feminino</option>
@@ -128,7 +128,7 @@
                                 <div class="col-sm-4">
                                     <label>Estado Civil</label>
                                     <div class="form-group">
-                                        <select class="form-control">
+                                        <select>
                                             <option value="">Selecione</option>
                                             <option value="C">Casado</option>
                                             <option value="S">Solteiro</option>

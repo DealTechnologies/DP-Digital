@@ -1060,14 +1060,14 @@ function renderPagination(wizard, options, state)
 
         if (!options.forceMoveForward)
         {
-            buttons += buttonTemplate.format("previous", options.labels.previous);
+            buttons += buttonTemplate.format("Anterior", options.labels.previous);
         }
 
-        buttons += buttonTemplate.format("next", options.labels.next);
+        buttons += buttonTemplate.format("Próximo", options.labels.next);
 
         if (options.enableFinishButton)
         {
-            buttons += buttonTemplate.format("finish", options.labels.finish);
+            buttons += buttonTemplate.format("Finalizar", options.labels.finish);
         }
 
         if (options.enableCancelButton)

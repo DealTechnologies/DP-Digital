@@ -1,0 +1,110 @@
+﻿@model TemplateMaterialDesignAdmin.Models.Candidato.Candidato;
+
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>Cadastro de Currículo</h2>
+
+                    </div>
+                    <div class="body">
+                        <form id="wizard_with_validation" asp-controller="Candidato" asp-action="Create" method="post">
+                            <h3>Informações</h3>
+                            <fieldset>
+                                <div class="col-md-6">
+                                    <div class="form-group form-float">
+                                        <b>Nome Completo</b>
+                                        <div class="form-line">
+                                            <input type="text" asp-for="Nome" class="form-control" name="Nome Completo" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group form-float">
+                                        <b>Data de Nascimento</b>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="material-icons">date_range</i>
+                                            </span>
+                                            <div class="form-line">
+                                                <input type="text" asp-for="DataNascimento" class="form-control date" placeholder="Ex: 30/07/2000" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group form-float">
+                                        <b>Email</b>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="material-icons">email</i>
+                                            </span>
+                                            <div class="form-line">
+                                                <input type="text" asp-for="Email" class="form-control email" placeholder="Ex: examplo@examplo.com" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group form-float">
+                                        <b>Telefone</b>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="material-icons">phone</i>
+                                            </span>
+                                            <div class="form-line">
+                                                <input type="text" asp-for="Telefone" class="form-control mobile-phone-number" placeholder="Ex: (00) 00000-0000">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group form-float">
+                                        <b>Gênero</b>
+                                        <select asp-for="Sexo" class="form-control show-tick">
+                                            <option value="Masculino">Masculino</option>
+                                            <option value="Feminino">Feminino</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group form-float">
+                                        <b>Título</b>
+                                        <div class="form-line">
+                                            <input type="text" asp-for="Titulo" class="form-control" name="Titulo" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                            <h3>Certificados</h3>
+                            <fieldset>
+                                <div class="col-md-6">
+                                    <div class="form-group form-float">
+                                        <b>Título 1</b>
+                                        <div class="form-line">
+                                            <input type="text" asp-for="Titulo" class="form-control" name="Titulo" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <h3>Certificados 2</h3>
+                            <fieldset>
+                                <div class="col-md-6">
+                                    <div class="form-group form-float">
+                                        <b>Título 2</b>
+                                        <div class="form-line">
+                                            <input type="text" asp-for="Titulo" class="form-control" name="Titulo" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                        </form>
+                    </div>
+                </div>
+            </div>      
+    </div>
+

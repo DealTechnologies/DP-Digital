@@ -15,13 +15,14 @@
                                     Dados Pessoais
                                 </a>
                             </li>
-                            <li role="tab" class="first current" aria-disabled="false" aria-selected="true">
+                            
+                            <li role="tab" aria-disabled="false" class="disabled" aria-disabled:"true">
                                 <a id="wizard_horizontal-t-0" aria-controls="wizard_horizontal-p-1" asp-action="Nacionalidade">
                                     <span class="current-info audible">current step: </span>
                                     Nacionalidade
                                 </a>
                             </li>
-                            <li role="tab" aria-disabled="false" class="disabled" aria-disabled:"true">
+                            <li role="tab" class="first current" aria-disabled="false" aria-selected="true">
                                 <a id="wizard_horizontal-t-0" aria-controls="wizard_horizontal-p-2" asp-action="InfoAdcionais">
                                     <span class="current-info audible">current step: </span>
                                     Informações Adicionais
@@ -39,56 +40,39 @@
                         <div class="body">
                             <div class="row clearfix">
                                 <div class="col-sm-4">
-                                    <label>Nacionalidade</label>
+                                    <label>Linkedin</label>
                                     <div class="form-group">
-                                        <select class="form-control show-tick">
-                                            <option value="Brasil" selected="selected">Brasil</option>
-                                            <option value="Afeganistão">Afeganistão</option>
-                                            <option value="África do Sul">África do Sul</option>
-                                            <option value="Albânia">Albânia</option>
-                                            <option value="Alemanha">Alemanha</option>
-                                            <option value="...">...</option>
-                                        </select>
+                                        <form action="/action_page.php">
+                                            <label for="fname">http://linkedin.com/in/</label>
+                                            <input type="text" id="fname" name="fname"><br><br>
+                                        </form>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
+                                    <label>Facebook</label>
                                     <div class="form-group">
-                                        <input type="checkbox" id="Naturalizado" name="Naturalizado"
-                                               checked>
-                                        <label for="Naturalizado">Naturalizado(a)</label>
+                                        <form action="/action_page.php">
+                                            <label for="fname">http://facebook.com/</label>
+                                            <input type="text" id="fname" name="fname"><br><br>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
-                            
-                            
+
+
                             <div class="row clearfix">
                                 <div class="col-sm-4">
-                                    <label>UF de Nascimento</label>
+                                    <label>Como conheceu a empresa</label>
                                     <div class="form-group">
                                         <select class="form-control show-tick">
-                                            <option value="Acre">Acre</option>
-                                            <option value="Alagoas">Alagoas</option>
-                                            <option value="Amapá">Amapá</option>
-                                            <option value="Amazonas">Amazonas</option>
-                                            <option value="Bahia">Bahia</option>
+                                            <option value="linkedin">linkedin</option>
+                                            <option value="Amigos">Amigos</option>
+                                            <option value="email">email</option>
                                             <option value="...">...</option>
 
                                         </select>
                                     </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <label>Cidade de Nascimento</label>
-                                    <div class="form-group">
-                                        <select class="form-control show-tick">
-                                            <option value="cidade1">cidade1</option>
-                                            <option value="cidade2">cidade2</option>
-                                            <option value="cidade3">cidade3</option>
-                                            <option value="cidade4">cidade4</option>
-                                            <option value="cidade5">cidade5</option>
-                                            <option value="...">...</option>
-                                        </select>
-                                    </div>
-                                </div>
+                                </div>                                
                             </div>
                         </div>
                     </div>
