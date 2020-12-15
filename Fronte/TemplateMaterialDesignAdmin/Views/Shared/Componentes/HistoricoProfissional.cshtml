@@ -1,0 +1,49 @@
+﻿@model TemplateMaterialDesignAdmin.Models.Candidato.TrajetoriaProfissional;
+
+<div class="col-md-12">
+    <div class="form-group form-float">
+        <b>Empresa</b>
+        <div class="form-line">
+            <input type="text" asp-for="Empresa" class="form-control" name="Empresa" required>
+        </div>
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="form-group form-float">
+        <b>Data Início</b>
+        <div class="input-group">
+            <span class="input-group-addon">
+                <i class="material-icons">date_range</i>
+            </span>
+            <div class="form-line">
+                <input type="text" asp-for="DataInicio" class="form-control date" placeholder="Ex: 30/07/1990" required>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="form-group form-float">
+        <b>Data Fim</b>
+        <div class="input-group">
+            <span class="input-group-addon">
+                <i class="material-icons">date_range</i>
+            </span>
+            <div class="form-line">
+                <input type="text" asp-for="DataFim" class="form-control date" placeholder="Ex: 01/01/1999">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="form-group form-float">
+        <b>Descrição</b>
+        <div class="form-line">
+            <input type="text" asp-for="Descricao" class="form-control" name="Descricao" required>
+            <textarea rows="4" class="form-control no-resize" asp-for="Descricao" placeholder="Descreva suas experiências..." required></textarea>
+        </div>
+    </div>
+</div>
+
+
+
+

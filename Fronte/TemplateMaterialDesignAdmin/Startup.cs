@@ -115,9 +115,10 @@ namespace TemplateMaterialDesignAdmin
             // Add Singleton Auth0 AuthenticationAPIClient
             services.AddSingleton(x => new AuthenticationApiClient(new Uri($"https://{Configuration["Auth0:Domain"]}/")));
 
-            #endregion            
+            #endregion
 
-            services.AddControllersWithViews();
+            services.AddMvc();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
