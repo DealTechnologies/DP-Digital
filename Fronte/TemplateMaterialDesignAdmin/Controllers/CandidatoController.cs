@@ -1,17 +1,43 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using TemplateMaterialDesignAdmin.Models.Candidato;
+using TemplateMaterialDesignAdmin.Models.Results;
+using TemplateMaterialDesignAdmin.Services.Interfaces;
 
 namespace TemplateMaterialDesignAdmin.Controllers
 {
     public class CandidatoController : Controller
     {
+        private readonly ICandidatoService _candidatoService;
         private readonly Candidato _candidato = new Candidato();
+
+        public CandidatoController(ICandidatoService candidatoService)
+        {
+            _candidatoService = candidatoService;
+        }
+
+        // GET: CandidatoController/List
+        public ActionResult List()
+        {
+            CommandResult result = _candidatoService.ObterTodos().GetAwaiter().GetResult();
+
+            List<Candidato> candidatos = new List<Candidato>();
+
+            if (result.Sucesso)
+            {
+                var json = JsonConvert.SerializeObject(result.Data);
+                candidatos = JsonConvert.DeserializeObject<List<Candidato>>(json);
+            }
+
+            return View(candidatos);
+        }
+
         // GET: CandidatoController
         public ActionResult Index()
         {

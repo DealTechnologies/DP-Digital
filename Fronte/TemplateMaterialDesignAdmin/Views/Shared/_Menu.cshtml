@@ -1,29 +1,46 @@
 ﻿<div class="menu">
     <ul class="list">
         <li class="header">@Context.User.Identity.Name</li>
+
         <li>
             <a href="@Url.Action("Index", "Home")">
                 <i class="material-icons">home</i>
                 <span>Principal</span>
             </a>
         </li>
+                
         <li>
-            <a href="@Url.Action("Index", "DadoPessoal")">
-                <i class="material-icons">emoji_people</i>
-                <span>Deal Maker</span>
-            </a>
+            @if (@Context.User.Identity.Name == "levi.junior@deal.com.br")
+            {
+                <a href="@Url.Action("List", "DadoPessoal")">
+                    <i class="material-icons">account_box</i>
+                    <span>Deal Maker</span>
+                </a>
+            }
+            else
+            {
+                <a href="@Url.Action("Index", "DadoPessoal")">
+                    <i class="material-icons">account_box</i>
+                    <span>Deal Maker</span>
+                </a>
+            }
         </li>
-        <li>
-            <a href="@Url.Action("Index", "Candidato")">
-                <i class="material-icons">account_box</i>
-                <span>Candidato</span>
-            </a>
-        </li>
+        
         <li>
             <a href="@Url.Action("Index", "GestaoAtividade")">
                 <i class="material-icons">more_time</i>
                 <span>Gestão de Atividades</span>
             </a>
         </li>
+
+        @if (@Context.User.Identity.Name == "levi.junior@deal.com.br")
+        {
+            <li>
+                <a href="@Url.Action("List", "Candidato")">
+                    <i class="material-icons">account_box</i>
+                    <span>Recrutamento</span>
+                </a>
+            </li>
+        }
     </ul>
 </div>

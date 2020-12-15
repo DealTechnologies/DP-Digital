@@ -10,6 +10,7 @@ namespace TemplateMaterialDesignAdmin.Services.Interfaces
         Task<CommandResult> Inserir(ColaboradorInserirCommand command);
         Task<CommandResult> Atualizar(ColaboradorAtualizarCommand command);
         Task<CommandResult> Remover(Guid id);
+        Task<CommandResult> ObterTodos();
         Task<CommandResult> ObterPorId(Guid id);
         Task<CommandResult> ObterPorNome(string nome);
         Task<CommandResult> ObterPorCPF(string cpf);

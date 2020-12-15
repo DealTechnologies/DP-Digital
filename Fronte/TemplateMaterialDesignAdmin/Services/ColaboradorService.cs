@@ -56,6 +56,36 @@ namespace TemplateMaterialDesignAdmin.Services
             throw new NotImplementedException();
         }
 
+        public async Task<CommandResult> ObterTodos()
+        {
+            try
+            {
+                HttpClient client = new HttpClient();
+                Uri uri = new Uri(_settings.DPDIGITAL_API_COLABORADOR + _settings.ENDPOINT_CANDIDATO_OBTERTODOS);
+
+                HttpRequestMessage request = new HttpRequestMessage
+                {
+                    Method = HttpMethod.Get,
+                    RequestUri = uri
+                };
+
+                HttpResponseMessage httpResponse;
+
+                using (client)
+                {
+                    httpResponse = await client.SendAsync(request);
+                }
+
+                var response = httpResponse.Content.ReadAsStringAsync().Result;
+                var retorno = JsonConvert.DeserializeObject<CommandResult>(response);
+                return retorno;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
         public async Task<CommandResult> ObterPorId(Guid id)
         {
             try
