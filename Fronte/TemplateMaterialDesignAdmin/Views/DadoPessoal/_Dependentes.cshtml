@@ -1,6 +1,6 @@
 ﻿
 <div class="content clearfix">
-    <button style="position: relative;float: right;background-color: #09d0be;color:white" type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal"><b>Adicionar Dependente</b></button>
+    <button  type="button" data-toggle="modal" data-target="#largeModalDependente" class="btn btn-lg" style="position: relative;float: right;background-color: #09d0be;color:white" ><b>Adicionar Dependente</b></button>
 </div>
 
 <br />
@@ -35,20 +35,4 @@
     </div>
 </div>
 
-
-<div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-            </div>
-            <div class="modal-body">
-                <p>This is a small modal.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
+<partial name="~/Views/DadoPessoal/_DependenteAdicionar.cshtml" />
