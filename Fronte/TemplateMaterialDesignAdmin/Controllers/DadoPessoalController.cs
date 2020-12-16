@@ -40,20 +40,5 @@ namespace TemplateMaterialDesignAdmin.Controllers
         {
             return View();
         }
-
-        public IActionResult InfoAdcionais()
-        {
-            return View();
-        } 
-        
-        public IActionResult Dependentes()
-        {
-            return View();
-        }
-
-        public IActionResult Nacionalidade()
-        {
-            return View();
-        }
     }
 }

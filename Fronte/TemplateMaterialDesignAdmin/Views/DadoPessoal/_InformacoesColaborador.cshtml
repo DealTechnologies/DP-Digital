@@ -1,0 +1,36 @@
+﻿<div class="card">
+    <div class="body">
+        <!-- Tabs -->
+        <ul class="nav nav-tabs tab-nav-right" role="tablist">
+            <li role="presentation" class="active"><a href="#DadosPessoais" data-toggle="tab"><h4>Dados pessoais</h4></a></li>
+            <li role="presentation"><a href="#Nacionalidade" data-toggle="tab"><h4>Nacionalidade</h4></a></li>
+            <li role="presentation"><a href="#InformacoesAdicionais" data-toggle="tab"><h4>Informações adicionais</h4></a></li>
+            <li role="presentation"><a href="#Dependentes" data-toggle="tab"><h4>Dependentes</h4></a></li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+
+            <!-- Dados pessoais -->
+            <div role="tabpanel" class="tab-pane fade in active" id="DadosPessoais">
+                <partial name="~/Views/DadoPessoal/_DadosPessoais.cshtml" />
+            </div>
+
+            <!-- Nacionalidade -->
+            <div role="tabpanel" class="tab-pane fade" id="Nacionalidade">
+                <partial name="~/Views/DadoPessoal/_Nacionalidade.cshtml" />
+            </div>
+
+            <!-- Informações adicionais -->
+            <div role="tabpanel" class="tab-pane fade" id="InformacoesAdicionais">
+                <partial name="~/Views/DadoPessoal/_InfoAdcionais.cshtml" />
+            </div>
+
+
+            <!-- Dependentes -->
+            <div role="tabpanel" class="tab-pane fade" id="Dependentes">
+                <partial name="~/Views/DadoPessoal/_Dependentes.cshtml" />
+            </div>
+        </div>
+    </div>
+</div>
