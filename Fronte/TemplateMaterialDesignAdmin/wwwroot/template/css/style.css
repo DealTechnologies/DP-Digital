@@ -5507,7 +5507,7 @@ section.content {
                 left: 0;
                 width: 100%;
                 height: 0;
-                border-bottom: 2px solid #2196F3;
+                border-bottom: 2px solid #35d6c7;
                 bottom: 2px;
                 -moz-transform: scaleX(0);
                 -ms-transform: scaleX(0);
@@ -6301,11 +6301,11 @@ section.content {
     }
 
 .panel-group .panel-col-cyan {
-    border: 1px solid #00BCD4;
+    border: 1px solid #2ca59a;
 }
 
     .panel-group .panel-col-cyan .panel-title {
-        background-color: #00BCD4 !important;
+        background-color: #2ca59a !important;
         color: #fff;
     }
 
