@@ -1,6 +1,6 @@
 ﻿
 <div class="content clearfix">
-    <button style="position: relative;float: right;" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+ Adicionar Dependente</button>
+    <button data-toggle="modal" data-target="#largeModal" type="button" class="btn btn-lg bg-greenNew waves-effect" style="position: relative;float: right;">+ Adicionar Dependente</button>
 </div>
 
 <br />
@@ -23,8 +23,8 @@
                         <td>Parentesco</td>
                         <td>13/12/2020</td>
                         <td>Brasileiro</td>
-                        <td><button>Ver</button></td>
-                        <td><button>Excluir</button></td>
+                        <td><button class="btn btn-block bg-greenNew waves-effect center">Ver</button></td>
+                        <td><button class="btn btn-block bg-greenNew waves-effect center">Excluir</button></td>
                     </tr>
                 </table>
             </div>
@@ -34,20 +34,4 @@
     </div>
 </div>
 
-
-<div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-            </div>
-            <div class="modal-body">
-                <p>This is a small modal.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
+<partial name="~/Views/DadoPessoal/_AdicionarDependente.cshtml" />
