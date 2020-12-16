@@ -1,6 +1,6 @@
 ﻿
 <div class="content clearfix">
-    <button data-toggle="modal" data-target="#largeModalFormacao" type="button" class="btn btn-lg bg-greenNew waves-effect" style="position: relative;float: right;">+ Adicionar Formação</button>
+    <button data-toggle="modal" data-target="#largeModalCertificacoes" type="button" class="btn btn-lg bg-greenNew waves-effect" style="position: relative;float: right;">+ Adicionar Certificação</button>
 </div>
 
 <br />
@@ -11,20 +11,18 @@
             <div class="table-responsive">
                 <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                     <tr>
-                        <th>Nome do Curso</th>
-                        <th>Tipo do Cruso</th>
-                        <th>Instituição</th>
+                        <th>Curso</th>
+                        <th>Emissor</th>
                         <th>Data</th>
-                        <th>Quantidades de horas</th>
+                        <th>Arquivos</th>
                         <th></th>
                         <th></th>
                     </tr>
                     <tr>
-                        <td>Economia</td>
-                        <td>Pós-graduação</td>
-                        <td>Estácio</td>
-                        <td>2000-2005</td>
-                        <td>1400h</td>
+                        <td>Especialização em IRPF</td>
+                        <td>SCSP</td>
+                        <td>2018</td>
+                        <td>1 anexo</td>
                         <td><button class="btn btn-block bg-defaut waves-effect center">Ver</button></td>
                         <td><button class="btn btn-block bg-defaut waves-effect center">Excluir</button></td>
                     </tr>
@@ -36,4 +34,4 @@
     </div>
 </div>
 
-<partial name="~/Views/DadoPessoal/_FormacaoAdicionar.cshtml" />
+<partial name="~/Views/DadoPessoal/_CertificacoesAdicionar.cshtml" />
