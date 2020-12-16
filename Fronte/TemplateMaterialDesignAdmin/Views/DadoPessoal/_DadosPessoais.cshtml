@@ -5,10 +5,10 @@
 </div>
 <div class="row clearfix">
     <div class="col-sm-4">
-        <label>Título</label>
+        <label>Nome Completo</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="Digite seu título">
+                <input type="text" class="form-control" placeholder="Digite seu nome completo">
             </div>
         </div>
     </div>
@@ -70,7 +70,7 @@
 
 <div class="row clearfix">
     <div class="col-sm-7">
-        <label>Contato para Emergêcias</label>
+        <label>Contato para Recados</label>
         <div class="form-group">
             <div class="form-line">
                 <input type="text" class="form-control" placeholder="Com quem podemos deixar recado?">
@@ -86,7 +86,7 @@
         </div>
     </div>
     <div class="col-sm-4">
-        <label>Telefone para Emergêcias</label>
+        <label>Telefone para Recado</label>
         <div class="form-group">
             <div class="form-line">
                 <input type="text" class="form-control" placeholder="00000-0000">
@@ -96,7 +96,7 @@
 </div>
 
 <div class="row clearfix">
-    <div class="col-sm-6">
+    <div class="col-sm-4">
         <label>Gênero</label>
         <div class="form-group">
             <select>
@@ -106,16 +106,29 @@
             </select>
         </div>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-4">
         <label>Estado Civil</label>
         <div class="form-group">
             <select>
                 <option value="">Selecione</option>
-                <option value="C">Casado</option>
-                <option value="S">Solteiro</option>
-                <option value="D">Divorciado</option>
-                <option value="V">Viúvo</option>
+                <option value="C">Casado(a)</option>
+                <option value="S">Solteiro(a)</option>
+                <option value="D">Divorciado(a)</option>
+                <option value="V">Viúvo(a)</option>
+                <option value="U">União Estável</option>
             </select>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="form-group">
+            <input type="checkbox" id="PossuiDeficiencia" name="PossuiDeficiencia">
+            <label for="PossuiDeficiencia">Possui Deficiência</label>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="form-group">
+            <input type="checkbox" id="PossuiDependentes" name="PossuiDependentes">
+            <label for="PossuiDependentes">Possui Dependentes</label>
         </div>
     </div>
 </div>
@@ -148,18 +161,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-3">
-        <div class="form-group">
-            <input type="checkbox" id="PossuiDeficiencia" name="PossuiDeficiencia" checked>
-            <label for="Naturalizado">Possui Deficiência</label>
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="form-group">
-            <input type="checkbox" id="PossuiDependentes" name="PossuiDependentes" checked>
-            <label for="Naturalizado">Possui Dependentes</label>
-        </div>
-    </div>
+    
 </div>
 
 <div class="actions clearfix"></div>
