@@ -1,0 +1,39 @@
+﻿
+<div class="content clearfix">
+    <button data-toggle="modal" data-target="#largeModalFormacao" type="button" class="btn btn-lg bg-greenNew waves-effect" style="position: relative;float: right;">+ Adicionar Formação</button>
+</div>
+
+<br />
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="content clearfix">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover dataTable js-exportable">
+                    <tr>
+                        <th>Nome do Curso</th>
+                        <th>Tipo do Cruso</th>
+                        <th>Instituição</th>
+                        <th>Data</th>
+                        <th>Quantidades de horas</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>Economia</td>
+                        <td>Pós-graduação</td>
+                        <td>Estácio</td>
+                        <td>2000-2005</td>
+                        <td>1400h</td>
+                        <td><button class="btn btn-block bg-defaut waves-effect center">Ver</button></td>
+                        <td><button class="btn btn-block bg-defaut waves-effect center">Excluir</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="actions clearfix"></div>
+    </div>
+</div>
+
+<partial name="~/Views/DadoPessoal/_FormacaoAdicionar.cshtml" />
