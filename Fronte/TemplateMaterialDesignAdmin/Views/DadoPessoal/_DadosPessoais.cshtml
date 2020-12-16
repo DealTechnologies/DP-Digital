@@ -1,4 +1,5 @@
-﻿<div class="row clearfix">
+﻿<!--Dados Sociais-->
+<div class="row clearfix">
     <div class="col-sm-4">
         <h4>Dados Sociais</h4>
     </div>
@@ -121,14 +122,20 @@
     </div>
     <div class="col-sm-2">
         <div class="form-group">
-            <input type="checkbox" id="PossuiDeficiencia" name="PossuiDeficiencia">
-            <label for="PossuiDeficiencia">Possui Deficiência</label>
+            <label>Possui Deficiência</label>
+            <div class="form-line">
+                <input type="checkbox" id="PossuiDeficiencia" name="PossuiDeficiencia">
+                <label for="PossuiDeficiencia">Possui Deficiência</label>
+            </div>
         </div>
     </div>
     <div class="col-sm-2">
         <div class="form-group">
-            <input type="checkbox" id="PossuiDependentes" name="PossuiDependentes">
-            <label for="PossuiDependentes">Possui Dependentes</label>
+            <label>Possui Dependentes</label>
+            <div class="form-line">
+                <input type="checkbox" id="PossuiDependentes" name="PossuiDependentes">
+                <label for="PossuiDependentes">Possui Dependentes</label>
+            </div>
         </div>
     </div>
 </div>
@@ -161,7 +168,280 @@
             </div>
         </div>
     </div>
-    
+
 </div>
 
 <div class="actions clearfix"></div>
+
+<hr />
+
+<!--Documentos-->
+<div class="row clearfix">
+    <div class="col-sm-4">
+        <h4>Documentos</h4>
+    </div>
+</div>
+
+<div class="row clearfix">
+    <div class="col-sm-12">
+        <label>Arquivo</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="file" class="form-control" placeholder="Anexar documento">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row clearfix">
+    <div class="col-sm-4">
+        <label>Tipo do Documento</label>
+        <div class="form-group">
+            <select class="form-control">
+                <option value="RG">RG</option>
+                <option value="CPF">CPF</option>
+                <option value="Passaporte">Passaporte</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <label>Número do Documento</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="text" class="form-control" placeholder="00.000.00-0">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <label>Data de Emissão</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="date" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row clearfix">
+    <div class="col-sm-4">
+        <label>Estado de Emissão</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="text" class="form-control" placeholder="Digite o estado de emissão">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <label>Orgão Emissor</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="text" class="form-control" placeholder="Digite o orgão emissor">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <label>Validade</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="date" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr />
+
+<!--Carteira de Trabalho (CTPS)-->
+<div class="row clearfix">
+    <div class="col-sm-4">
+        <h4>Carteira de Trabalho (CTPS)</h4>
+    </div>
+</div>
+
+<div class="row clearfix">
+    <div class="col-sm-12">
+        <label>Arquivo</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="file" class="form-control" placeholder="Anexar documento">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row clearfix">
+    <div class="col-sm-4">
+        <label>Número da Carteira de Trabalho</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="text" class="form-control" placeholder="0000000000">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <label>Série</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="text" class="form-control" placeholder="0000-XX">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <label>Modelo</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="text" class="form-control" placeholder="Digite o modelo">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row clearfix">
+    <div class="col-sm-4">
+        <label>Estado de Emissão</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="text" class="form-control" placeholder="Digite o estado de emissão">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <label>Data de Emissão</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="date" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <label>Data de Validade (Para Estrangeiros)</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="date" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr />
+
+<!--Título de Eleitor-->
+<div class="row clearfix">
+    <div class="col-sm-4">
+        <h4>Título de Eleitor</h4>
+    </div>
+</div>
+
+<div class="row clearfix">
+    <div class="col-sm-12">
+        <label>Arquivo</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="file" class="form-control" placeholder="Anexar documento">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row clearfix">
+    <div class="col-sm-3">
+        <label>Emitido</label>
+        <div class="form-group">
+            <select class="form-control">
+                <option value="Sim">Sim</option>
+                <option value="Nao">Nao</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <label>Número</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="text" class="form-control" placeholder="000 000 000">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <label>Zona</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="text" class="form-control" placeholder="0000">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <label>Seção</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="text" class="form-control" placeholder="000">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row clearfix">
+    <div class="col-sm-4">
+        <label>Estado de Emissão</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="text" class="form-control" placeholder="Digite o estado de emissão">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <label>Cidade de Emissão</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="text" class="form-control" placeholder="Digite a cidade de emissão">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <label>Data de Emissão</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="date" class="form-control">
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr />
+
+<!--Número do Programa de Integração Social (PIS/NIS)-->
+<div class="row clearfix">
+    <div class="col-sm-4">
+        <h4>Número do Programa de Integração Social (PIS/NIS)</h4>
+    </div>
+</div>
+
+<div class="row clearfix">
+    <div class="col-sm-12">
+        <label>Arquivo</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="file" class="form-control" placeholder="Anexar documento">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row clearfix">
+    <div class="col-sm-10">
+        <label>Número do PIS</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="text" class="form-control" placeholder="00000000000">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <label>Número</label>
+        <div class="form-group">
+            <div class="form-line">
+                <input type="checkbox" id="PrimeiroEmprego" name="PrimeiroEmprego">
+                <label for="PrimeiroEmprego">Primeiro Emprego</label>
+            </div>
+        </div>
+    </div>
+</div>
