@@ -9,7 +9,7 @@
         <label>Nome Completo</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="Digite seu nome completo">
+                <input type="text" id="DMDSNomeCompleto" class="form-control" placeholder="Digite seu nome completo">
             </div>
         </div>
     </div>
@@ -17,7 +17,7 @@
         <label>Nome Social</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="Digite seu nome e sobrenome">
+                <input type="text" id="DMDSNomeSocial" class="form-control" placeholder="Digite seu nome e sobrenome">
             </div>
         </div>
     </div>
@@ -25,7 +25,7 @@
         <label>Data de Nascimento</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="date" class="form-control date" placeholder="Digite sua data de nascimento">
+                <input type="date" id="DMDSDataNascimento" class="form-control date" placeholder="Digite sua data de nascimento">
             </div>
         </div>
     </div>
@@ -36,7 +36,7 @@
         <label>Foto</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="file" class="form-control">
+                <input type="file" id="DMDSFoto" class="form-control">
             </div>
         </div>
     </div>
@@ -47,7 +47,7 @@
         <label>E-mail</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="Digite seu email">
+                <input type="text" id="DMDSEmail" class="form-control" placeholder="Digite seu email">
             </div>
         </div>
     </div>
@@ -55,7 +55,7 @@
         <label>DDD</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="DDD" width="30">
+                <input type="text" id="DMDSDDDTelefonePessoal" class="form-control" placeholder="DDD" width="30">
             </div>
         </div>
     </div>
@@ -63,7 +63,7 @@
         <label>Telefone Pessoal</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="00000-0000">
+                <input type="text" id="DMDSTelefonePessoal" class="form-control" placeholder="00000-0000">
             </div>
         </div>
     </div>
@@ -74,7 +74,7 @@
         <label>Contato para Recados</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="Com quem podemos deixar recado?">
+                <input type="text" id="DMDSContatoRecado" class="form-control" placeholder="Com quem podemos deixar recado?">
             </div>
         </div>
     </div>
@@ -82,7 +82,7 @@
         <label>DDD</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="DDD" width="30">
+                <input type="text" id="DMDSDDDTelefoneRecado" class="form-control" placeholder="DDD" width="30">
             </div>
         </div>
     </div>
@@ -90,7 +90,7 @@
         <label>Telefone para Recado</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="00000-0000">
+                <input type="text" id="DMDSTelefoneRecado" class="form-control" placeholder="00000-0000">
             </div>
         </div>
     </div>
@@ -100,7 +100,7 @@
     <div class="col-sm-4">
         <label>Gênero</label>
         <div class="form-group">
-            <select class="form-control">
+            <select class="form-control" id="DMDSSexo">
                 <option value="">Selecione</option>
                 <option value="M">Masculino</option>
                 <option value="F">Feminino</option>
@@ -109,7 +109,7 @@
     </div>
     <div class="col-sm-4">
         <label>Estado Civil</label>
-        <div class="form-group">
+        <div class="form-group" id="DMDSEstadoCivil">
             <select class="form-control">
                 <option value="">Selecione</option>
                 <option value="C">Casado(a)</option>
@@ -124,7 +124,7 @@
         <div class="form-group">
             <label>Possui Deficiência</label>
             <div class="form-line">
-                <input type="checkbox" id="PossuiDeficiencia" name="PossuiDeficiencia">
+                <input type="checkbox" id="DMDSPossuiDeficiencia" name="PossuiDeficiencia">
                 <label for="PossuiDeficiencia">Possui Deficiência</label>
             </div>
         </div>
@@ -133,7 +133,7 @@
         <div class="form-group">
             <label>Possui Dependentes</label>
             <div class="form-line">
-                <input type="checkbox" id="PossuiDependentes" name="PossuiDependentes">
+                <input type="checkbox" id="DMMSPossuiDependentes" name="PossuiDependentes">
                 <label for="PossuiDependentes">Possui Dependentes</label>
             </div>
         </div>
@@ -145,7 +145,7 @@
         <label>Nome da Mãe</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="Digite o nome da mãe">
+                <input type="text" id="DMDSNomeMae" class="form-control" placeholder="Digite o nome da mãe">
             </div>
         </div>
     </div>
@@ -153,7 +153,7 @@
         <label>Nome do Pai</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="Digite o nome do pai">
+                <input type="text" id="DMDSNomePai" class="form-control" placeholder="Digite o nome do pai">
             </div>
         </div>
     </div>
@@ -164,7 +164,7 @@
         <label>Nome do Cônjugue</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="Digite o nome do cônjugue">
+                <input type="text" id="DMDSNomeConjugue" class="form-control" placeholder="Digite o nome do cônjugue">
             </div>
         </div>
     </div>
@@ -187,7 +187,7 @@
         <label>Arquivo</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="file" class="form-control" placeholder="Anexar documento">
+                <input type="file" id="DMDCArquivo" class="form-control" placeholder="Anexar documento">
             </div>
         </div>
     </div>
@@ -197,7 +197,7 @@
     <div class="col-sm-4">
         <label>Tipo do Documento</label>
         <div class="form-group">
-            <select class="form-control">
+            <select class="form-control" id="DMDCTipo">
                 <option value="RG">RG</option>
                 <option value="CPF">CPF</option>
                 <option value="Passaporte">Passaporte</option>
@@ -208,7 +208,7 @@
         <label>Número do Documento</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="00.000.00-0">
+                <input type="text" id="DMDCNumero" class="form-control" placeholder="00.000.00-0">
             </div>
         </div>
     </div>
@@ -216,7 +216,7 @@
         <label>Data de Emissão</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="date" class="form-control">
+                <input type="date" id="DMDCDataEmissao" class="form-control">
             </div>
         </div>
     </div>
@@ -227,7 +227,7 @@
         <label>Estado de Emissão</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="Digite o estado de emissão">
+                <input type="text" id="DMDCEstadoEmissao" class="form-control" placeholder="Digite o estado de emissão">
             </div>
         </div>
     </div>
@@ -235,7 +235,7 @@
         <label>Orgão Emissor</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="Digite o orgão emissor">
+                <input type="text" id="DMDCOrgaoEmissor" class="form-control" placeholder="Digite o orgão emissor">
             </div>
         </div>
     </div>
@@ -243,7 +243,7 @@
         <label>Validade</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="date" class="form-control">
+                <input type="date" id="DMDCValidade" class="form-control">
             </div>
         </div>
     </div>
@@ -263,7 +263,7 @@
         <label>Arquivo</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="file" class="form-control" placeholder="Anexar documento">
+                <input type="file" id="DMCTArquivo" class="form-control" placeholder="Anexar documento">
             </div>
         </div>
     </div>
@@ -274,7 +274,7 @@
         <label>Número da Carteira de Trabalho</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="0000000000">
+                <input type="text" id="DMCTNumero" class="form-control" placeholder="0000000000">
             </div>
         </div>
     </div>
@@ -282,7 +282,7 @@
         <label>Série</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="0000-XX">
+                <input type="text" id="DMCTSerie" class="form-control" placeholder="0000-XX">
             </div>
         </div>
     </div>
@@ -290,7 +290,7 @@
         <label>Modelo</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="Digite o modelo">
+                <input type="text" id="DMCTModelo" class="form-control" placeholder="Digite o modelo">
             </div>
         </div>
     </div>
@@ -301,7 +301,7 @@
         <label>Estado de Emissão</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="Digite o estado de emissão">
+                <input type="text" id="DMCTEstadoEmissao" class="form-control" placeholder="Digite o estado de emissão">
             </div>
         </div>
     </div>
@@ -309,7 +309,7 @@
         <label>Data de Emissão</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="date" class="form-control">
+                <input type="date" id="DMCTDataEmissao" class="form-control">
             </div>
         </div>
     </div>
@@ -317,7 +317,7 @@
         <label>Data de Validade (Para Estrangeiros)</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="date" class="form-control">
+                <input type="date" id="DMCTDataValidade" class="form-control">
             </div>
         </div>
     </div>
@@ -337,7 +337,7 @@
         <label>Arquivo</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="file" class="form-control" placeholder="Anexar documento">
+                <input type="file" id="DMTEArquivo" class="form-control" placeholder="Anexar documento">
             </div>
         </div>
     </div>
@@ -347,7 +347,7 @@
     <div class="col-sm-3">
         <label>Emitido</label>
         <div class="form-group">
-            <select class="form-control">
+            <select class="form-control" id="DMTEEmitido">
                 <option value="Sim">Sim</option>
                 <option value="Nao">Nao</option>
             </select>
@@ -357,7 +357,7 @@
         <label>Número</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="000 000 000">
+                <input type="text" id="DMTENumero" class="form-control" placeholder="000 000 000">
             </div>
         </div>
     </div>
@@ -365,7 +365,7 @@
         <label>Zona</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="0000">
+                <input type="text" id="DMTEZona" class="form-control" placeholder="0000">
             </div>
         </div>
     </div>
@@ -373,7 +373,7 @@
         <label>Seção</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="000">
+                <input type="text" id="DMTESecao" class="form-control" placeholder="000">
             </div>
         </div>
     </div>
@@ -384,7 +384,7 @@
         <label>Estado de Emissão</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="Digite o estado de emissão">
+                <input type="text" id="DMTEEstadoEmissao" class="form-control" placeholder="Digite o estado de emissão">
             </div>
         </div>
     </div>
@@ -392,7 +392,7 @@
         <label>Cidade de Emissão</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="Digite a cidade de emissão">
+                <input type="text" id="DMTECidadeEmissao" class="form-control" placeholder="Digite a cidade de emissão">
             </div>
         </div>
     </div>
@@ -400,7 +400,7 @@
         <label>Data de Emissão</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="date" class="form-control">
+                <input type="date" id="DMTEDataEmissao" class="form-control">
             </div>
         </div>
     </div>
@@ -420,7 +420,7 @@
         <label>Arquivo</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="file" class="form-control" placeholder="Anexar documento">
+                <input type="file" id="DMPISArquivo" class="form-control" placeholder="Anexar documento">
             </div>
         </div>
     </div>
@@ -431,7 +431,7 @@
         <label>Número do PIS</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="text" class="form-control" placeholder="00000000000">
+                <input type="text" id="DMPISNumero" class="form-control" placeholder="00000000000">
             </div>
         </div>
     </div>
@@ -439,7 +439,7 @@
         <label>Número</label>
         <div class="form-group">
             <div class="form-line">
-                <input type="checkbox" id="PrimeiroEmprego" name="PrimeiroEmprego">
+                <input type="checkbox" id="DMPISPrimeiroEmprego" name="PrimeiroEmprego">
                 <label for="PrimeiroEmprego">Primeiro Emprego</label>
             </div>
         </div>

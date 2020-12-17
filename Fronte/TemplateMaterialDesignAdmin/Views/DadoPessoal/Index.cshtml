@@ -74,7 +74,7 @@
                                 </div>
                             </div>
                             <div class="clearfix">
-                                <button type="button" class="btn bg-greenNew waves-effect right"  style="margin-left:10px">Enviar</button>
+                                <button type="button" onclick="getFormData();" class="btn bg-greenNew waves-effect right"  style="margin-left:10px">Enviar</button>
                                 <button type="button" class="btn btn-default waves-effect right">Limpar</button>
                             </div>
                         </div>
@@ -84,3 +84,103 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    var dependetesTemp = [];
+    var certificacoesTemp = [];
+
+    function getFormData() {
+        var DadosSociais = new Object();
+        DadosSociais.NomeCompleto = document.getElementById("DMDSNomeCompleto").value;
+        DadosSociais.NomeSocial = document.getElementById("DMDSNomeSocial").value;
+        DadosSociais.DataNascimento = document.getElementById("DMDSDataNascimento").value;
+        DadosSociais.Foto = document.getElementById("DMDSFoto").value;
+        DadosSociais.Email = document.getElementById("DMDSEmail").value;
+        DadosSociais.DDDTelefonePessoal = document.getElementById("DMDSDDDTelefonePessoal").value;
+        DadosSociais.TelefonePessoal = document.getElementById("DMDSTelefonePessoal").value;
+        DadosSociais.ContatoRecado = document.getElementById("DMDSContatoRecado").value;
+        DadosSociais.DDDTelefoneRecado = document.getElementById("DMDSDDDTelefoneRecado").value;
+        DadosSociais.TelefoneRecado = document.getElementById("DMDSTelefoneRecado").value;
+        DadosSociais.Sexo = document.getElementById("DMDSSexo").value;
+        DadosSociais.EstadoCivil = document.getElementById("DMDSEstadoCivil").value;
+        DadosSociais.PossuiDeficiencia = document.getElementById("DMDSPossuiDeficiencia").value;
+        DadosSociais.PossuiDependentes = document.getElementById("DMMSPossuiDependentes").value;
+        DadosSociais.NomeMae = document.getElementById("DMDSNomeMae").value;
+        DadosSociais.NomePai = document.getElementById("DMDSNomePai").value;
+        DadosSociais.NomeConjugue = document.getElementById("DMDSNomeConjugue").value;
+
+        var Documento = new Object();
+        Documento.Arquivo = document.getElementById("DMDCArquivo").value;
+        Documento.Tipo = document.getElementById("DMDCTipo").value;
+        Documento.Numero = document.getElementById("DMDCNumero").value;
+        Documento.DataEmissao = document.getElementById("DMDCDataEmissao").value;
+        Documento.EstadoEmissao = document.getElementById("DMDCEstadoEmissao").value;
+        Documento.OrgaoEmissor = document.getElementById("DMDCOrgaoEmissor").value;
+        Documento.Validade = document.getElementById("DMDCValidade").value;
+
+        var CarteiraTrabalho = new Object();
+        CarteiraTrabalho.Arquivo = document.getElementById("DMCTArquivo").value;
+        CarteiraTrabalho.Numero = document.getElementById("DMCTNumero").value;
+        CarteiraTrabalho.Serie = document.getElementById("DMCTSerie").value;
+        CarteiraTrabalho.Modelo = document.getElementById("DMCTModelo").value;
+        CarteiraTrabalho.EstadoEmissao = document.getElementById("DMCTEstadoEmissao").value;
+        CarteiraTrabalho.DataEmissao = document.getElementById("DMCTDataEmissao").value;
+        CarteiraTrabalho.DataValidade = document.getElementById("DMCTDataValidade").value;
+
+        var TituloEleitor = new Object();
+        TituloEleitor.Arquivo = document.getElementById("DMTEArquivo").value;
+        TituloEleitor.Emitido = document.getElementById("DMTEEmitido").value;
+        TituloEleitor.Numero = document.getElementById("DMTENumero").value;
+        TituloEleitor.Zona = document.getElementById("DMTEZona").value;
+        TituloEleitor.Secao = document.getElementById("DMTESecao").value;
+        TituloEleitor.EstadoEmissao = document.getElementById("DMTEEstadoEmissao").value;
+        TituloEleitor.CidadeEmissao = document.getElementById("DMTECidadeEmissao").value;
+        TituloEleitor.DataEmissao = document.getElementById("DMTEDataEmissao").value;
+
+        var PIS = new Object();
+        PIS.Arquivo = document.getElementById("DMPISArquivo").value;
+        PIS.Numero = document.getElementById("DMPISNumero").value;
+        PIS.PrimeiroEmprego = document.getElementById("DMPISPrimeiroEmprego").value;
+
+        var Naturalidade = new Object();
+        Naturalidade.Nacionalidade = document.getElementById("DMNNacionalidade").value;
+        Naturalidade.Naturalizado = document.getElementById("DMNNaturalizado").value;
+        Naturalidade.UfNascimento = document.getElementById("DMNUfNascimento").value;
+        Naturalidade.CidadeNascimento = document.getElementById("DMNCidadeNascimento").value;
+        Naturalidade.ClassificacaoEstrangeiro = document.getElementById("DMNClassificacaoEstrangeiro").value;
+
+        var RedesSociais = new Object();
+        RedesSociais.Linkedin = document.getElementById("DMIALinkedin").value;
+        RedesSociais.Facebook = document.getElementById("DMIAFacebook").value;
+        RedesSociais.ComoConheceuEmpresa = document.getElementById("DMIAComoConheceuEmpresa").value;
+        RedesSociais.Linkedin = document.getElementById("DMIALinkedin").value;
+
+        var DadosFisicos = new Object();
+        DadosFisicos.Altura = document.getElementById("DMIAAltura").value;
+        DadosFisicos.TamanhoCamisa = document.getElementById("DMIATamanhoCamisa").value;
+        DadosFisicos.TamanhoCalca = document.getElementById("DMIATamanhoCalca").value;
+        DadosFisicos.TamanhoCalcado = document.getElementById("DMIATamanhoCalcado").value;
+
+        var Dependentes = [];
+        Dependentes = dependetesTemp; 
+
+        var DealMaker = new Object();
+        DealMaker.DadosSociais = DadosSociais;
+        DealMaker.Documento = Documento;
+        DealMaker.CarteiraTrabalho = CarteiraTrabalho;
+        DealMaker.TituloEleitor = TituloEleitor;
+        DealMaker.PIS = PIS;
+        DealMaker.Naturalidade = Naturalidade;
+        DealMaker.RedesSociais = RedesSociais;
+        DealMaker.DadosFisicos = DadosFisicos;
+        DealMaker.Dependentes = Dependentes;
+
+        console.log(DealMaker);
+    }
+
+    function fecharModalDependentes() {
+
+    }
+
+
+</script>
