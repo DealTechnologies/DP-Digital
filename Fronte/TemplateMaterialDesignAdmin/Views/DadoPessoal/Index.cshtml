@@ -214,7 +214,7 @@
 
         preencherTabelaDependentes();
 
-        fecharModalDependentes();
+        fecharModalDependentes(true);
     }
 
     function preencherTabelaDependentes() {
@@ -250,14 +250,81 @@
         document.getElementById("tblDependentes").style.visibility = 'visible';
     }
 
-    function fecharModalDependentes() {
+    function fecharModalDependentes(clicar) {
         document.getElementById("DMDPNomeCompleto").value = '';
         document.getElementById("DMDPGenero").value = '';
         document.getElementById("DMDPGrauParentesco").value = '';
         document.getElementById("DMDPDataNascimento").value = '';
         document.getElementById("DMDPEstadoNascimento").value = '';
         document.getElementById("DMDPNacionalidade").value = '';
-        document.getElementById("btnDependentesClose").click();
+
+        if(clicar) document.getElementById("btnDependentesClose").click();
+    }
+
+    function adicionarFormacao() {
+        var Formacao = new Object();
+        Formacao.Curso = document.getElementById("DMFOCurso").value;
+        Formacao.Tipo = document.getElementById("DMFOTipo").value;
+        Formacao.Instituicao = document.getElementById("DMFOInstituicao").value;
+        Formacao.TotalHoras = document.getElementById("DMFOTotalHoras").value;
+        Formacao.DataInicio = document.getElementById("DMFODataInicio").value;
+        Formacao.DataConclusao = document.getElementById("DMFODataConclusao").value; 
+        Formacao.Idioma = document.getElementById("DMFOIdioma").value; 
+        Formacao.Preferencia = document.getElementById("DMFOPreferencia").value; 
+
+        FormacoesTemp.push(Formacao);
+
+        preencherTabelaFormacoes();
+
+        fecharModalFormacoes(true);
+    }
+
+    function preencherTabelaFormacoes() {
+        var html =
+            '<thead>' +
+            '<tr>' +
+            '<th>Nome do Curso</th>' +
+            '<th>Tipo do Cruso</th>' +
+            '<th>Instituição</th>' +
+            '<th>Data</th>' +
+            '<th>Quantidades de horas</th>' +
+            '<th></th>' +
+            '</tr>' +
+            '</thead>' +
+            '<tbody>';
+
+        for (i = 0; i < FormacoesTemp.length; i++) {
+            html +=
+                '<tr>' +
+                '<td>' + FormacoesTemp[i].Curso + '</td>' +
+                '<td>' + FormacoesTemp[i].Tipo + '</td>' +
+                '<td>' + FormacoesTemp[i].Instituicao + '</td>' +
+                '<td>' + formatarData(FormacoesTemp[i].DataInicio) + 'até' + formatarData(FormacoesTemp[i].DataConclusao) + '</td>' +
+                '<td>' + FormacoesTemp[i].TotalHoras + '</td>' +
+                '<td>' +
+                '<button type="button" style="background:transparent; background-color:transparent;border:none"><i class="material-icons" style="color:black">search</i></button>' +
+                '<button type="button" style="background: transparent;border: none"><i class="material-icons" style="color:red">delete</i></button>' +
+                '</td>' +
+                '</tr>'
+        }
+
+        html += '</tbody></table>';
+
+        document.getElementById("tblFormacoes").innerHTML = html;
+        document.getElementById("tblFormacoes").style.visibility = 'visible';
+    }
+
+    function fecharModalFormacoes(clicar) {
+        document.getElementById("DMFOCurso").value = '';
+        document.getElementById("DMFOTipo").value = '';
+        document.getElementById("DMFOInstituicao").value = '';
+        document.getElementById("DMFOTotalHoras").value = '';
+        document.getElementById("DMFODataInicio").value = '';
+        document.getElementById("DMFODataConclusao").value = '';
+        document.getElementById("DMFOIdioma").value = '';
+        document.getElementById("DMFOPreferencia").value = '';
+
+        if(clicar) document.getElementById("btnFormacaoClose").click();
     }
 
     function adicionarExperienciaProfissional() {
@@ -277,7 +344,7 @@
 
         preencherTabelaExperienciaProfissional();
 
-        fecharModalExperienciaProfissional();
+        fecharModalExperienciaProfissional(true);
     }
 
     function preencherTabelaExperienciaProfissional() {
@@ -313,7 +380,7 @@
         document.getElementById("tblExperienciaProfissional").style.visibility = 'visible';
     }
 
-    function fecharModalExperienciaProfissional() {
+    function fecharModalExperienciaProfissional(clicar) {
         document.getElementById("DMEPEmpresa").value = '';
         document.getElementById("DMEPCidade").value = '';
         document.getElementById("DMEPDataAdmissao").value = '';
@@ -324,7 +391,8 @@
         document.getElementById("DMEPPorHora").value = '';
         document.getElementById("DMEPAtividades").value = '';
         document.getElementById("DMEPTecnologias").value = '';
-        document.getElementById("btnExperienciaProfissionalClose").click();
+
+        if(clicar) document.getElementById("btnExperienciaProfissionalClose").click();
     }
 
     function adicionarCertificacao() {
@@ -341,7 +409,7 @@
 
         preencherTabelaCertificacoes();
 
-        fecharModalCertificacao();
+        fecharModalCertificacao(true);
     }
 
     function preencherTabelaCertificacoes() {
@@ -377,7 +445,7 @@
         document.getElementById("tblCertificacoes").style.visibility = 'visible';
     }
 
-    function fecharModalCertificacao() {
+    function fecharModalCertificacao(clicar) {
         document.getElementById("DMCENomeCurso").value = '';
         document.getElementById("DMCEEmissor").value = '';
         document.getElementById("DMCEInstituicao").value = '';
@@ -385,6 +453,7 @@
         document.getElementById("DMCEDataConclusao").value = '';
         document.getElementById("DMCECargaHoraria").value = '';
         document.getElementById("DMCEDiplomaCertificado").value = '';
-        document.getElementById("btnCertificacaoClose").click();
+
+        if(clicar) document.getElementById("btnCertificacaoClose").click();
     }
 </script>
