@@ -23,6 +23,7 @@ namespace TemplateMaterialDesignAdmin.Controllers
         }
 
         // GET: CandidatoController/List
+        [Route("Recrutamento/ListaDeCandidatos")]
         public ActionResult List()
         {
             CommandResult result = _candidatoService.ObterTodos().GetAwaiter().GetResult();

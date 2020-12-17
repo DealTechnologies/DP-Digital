@@ -10447,7 +10447,17 @@ fieldset[disabled] .form-control {
 .dd3-content:hover {
     color: #2196F3;
 }
+#divBarra {
+    background-image: url(../images/barraCurriculo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 
+#divLogo {
+    background-image: url(../images/DealPremium.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 /* Login Page ================================== */
 .login-page {
     /*background-color: #00BCD4;*/
