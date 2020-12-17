@@ -13,7 +13,7 @@
                         <label>Nome Completo</label>
                         <div class="form-group">
                             <div class="form-line">
-                                <input type="text" class="form-control" placeholder="Digite o nome completo ">
+                                <input type="text" id="DMDPNomeCompleto" class="form-control" placeholder="Digite o nome completo ">
                             </div>
                         </div>
                     </div>
@@ -24,7 +24,7 @@
                         <label>Gênero</label>
                         <div class="form-group">
                             <div class="form-line">
-                                <input type="text" class="form-control" placeholder="Digite o gênero">
+                                <input type="text" id="DMDPGenero" class="form-control" placeholder="Digite o gênero">
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                         <label>Grau de Parentesco</label>
                         <div class="form-group">
                             <div class="form-line">
-                                <input type="text" class="form-control" placeholder="Digite o grau de parentesco">
+                                <input type="text" id="DMDPGrauParentesco" class="form-control" placeholder="Digite o grau de parentesco">
                             </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
                         <label>Data de Nascimento</label>
                         <div class="form-group">
                             <div class="form-line">
-                                <input type="date" class="form-control" placeholder="Digite a data de nascimento">
+                                <input type="date" id="DMDPDataNascimento" class="form-control" placeholder="Digite a data de nascimento">
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                         <label>Estado de Nascimento</label>
                         <div class="form-group">
                             <div class="form-line">
-                                <input type="text" class="form-control" placeholder="Digite o estado de nascimento">
+                                <input type="text" id="DMDPEstadoNascimento" class="form-control" placeholder="Digite o estado de nascimento">
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                         <label>Nacionalidade</label>
                         <div class="form-group">
                             <div class="form-line">
-                                <input type="text" class="form-control" placeholder="Digite a nacionalidade">
+                                <input type="text" id="DMDPNacionalidade" class="form-control" placeholder="Digite a nacionalidade">
                             </div>
                         </div>
                     </div>
@@ -67,8 +67,8 @@
             </div>
 
             <div class="modal-footer">
-                <button type="button" class="btn bg-greenNew waves-effect right" style="margin-left:10px">Adicionar</button>
-                <button type="button" class="btn bg-deafult waves-effect right" data-dismiss="modal">Fechar</button>
+                <button type="button" id="btnDependentesAdd" onclick="adicionarDependente();" class="btn bg-greenNew waves-effect right" style="margin-left:10px">Adicionar</button>
+                <button type="button" id="btnDependentesClose" class="btn bg-deafult waves-effect right" data-dismiss="modal">Fechar</button>
             </div>
         </div>
     </div>

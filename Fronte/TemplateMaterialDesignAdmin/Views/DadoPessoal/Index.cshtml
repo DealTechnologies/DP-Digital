@@ -86,8 +86,8 @@
 </div>
 
 <script type="text/javascript">
-    var dependetesTemp = [];
-    var certificacoesTemp = [];
+    var DependetesTemp = [];
+    var CertificacoesTemp = [];
 
     function getFormData() {
         var DadosSociais = new Object();
@@ -162,7 +162,7 @@
         DadosFisicos.TamanhoCalcado = document.getElementById("DMIATamanhoCalcado").value;
 
         var Dependentes = [];
-        Dependentes = dependetesTemp; 
+        Dependentes = DependetesTemp; 
 
         var DealMaker = new Object();
         DealMaker.DadosSociais = DadosSociais;
@@ -178,8 +178,26 @@
         console.log(DealMaker);
     }
 
-    function fecharModalDependentes() {
+    function adicionarDependente() {
+        var Dependente = new Object();
+        Dependente.NomeCompleto = document.getElementById("DMDPNomeCompleto").value;
+        Dependente.Genero = document.getElementById("DMDPGenero").value;
+        Dependente.GrauParentesco = document.getElementById("DMDPGrauParentesco").value;
+        Dependente.DataNascimento = document.getElementById("DMDPDataNascimento").value;
+        Dependente.EstadoNascimento = document.getElementById("DMDPEstadoNascimento").value;
+        Dependente.Nacionalidade = document.getElementById("DMDPNacionalidade").value;
+        DependetesTemp.push(Dependente);
+        fecharModalDependentes();
+    }
 
+    function fecharModalDependentes() {
+        document.getElementById("DMDPNomeCompleto").value = '';
+        document.getElementById("DMDPGenero").value = '';
+        document.getElementById("DMDPGrauParentesco").value = '';
+        document.getElementById("DMDPDataNascimento").value = '';
+        document.getElementById("DMDPEstadoNascimento").value = '';
+        document.getElementById("DMDPNacionalidade").value = '';
+        document.getElementById("btnDependentesClose").click();
     }
 
 
