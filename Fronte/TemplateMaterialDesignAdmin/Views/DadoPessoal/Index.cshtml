@@ -87,6 +87,8 @@
 
 <script type="text/javascript">
     var DependetesTemp = [];
+    var FormacoesTemp = [];
+    var ExperienciasProfTemp = [];
     var CertificacoesTemp = [];
 
     function formatarData(data) {
@@ -173,6 +175,15 @@
         var Dependentes = [];
         Dependentes = DependetesTemp; 
 
+        var Formacoes = [];
+        Formacoes = FormacoesTemp; 
+
+        var ExperienciasProfissionais = [];
+        ExperienciasProfissionais = ExperienciasProfTemp; 
+
+        var Certificacoes = [];
+        Certificacoes = CertificacoesTemp; 
+
         var DealMaker = new Object();
         DealMaker.DadosSociais = DadosSociais;
         DealMaker.Documento = Documento;
@@ -183,6 +194,9 @@
         DealMaker.RedesSociais = RedesSociais;
         DealMaker.DadosFisicos = DadosFisicos;
         DealMaker.Dependentes = Dependentes;
+        DealMaker.Formacoes = Formacoes;
+        DealMaker.ExperienciasProfissionais = ExperienciasProfissionais;
+        DealMaker.Certificacoes = Certificacoes;
 
         console.log(DealMaker);
     }
@@ -246,5 +260,71 @@
         document.getElementById("btnDependentesClose").click();
     }
 
+    function adicionarExperienciaProfissional() {
+        var ExperienciaProfissional = new Object();
+        ExperienciaProfissional.Empresa = document.getElementById("DMEPEmpresa").value;
+        ExperienciaProfissional.Cidade = document.getElementById("DMEPCidade").value;
+        ExperienciaProfissional.DataAdmissao = document.getElementById("DMEPDataAdmissao").value;
+        ExperienciaProfissional.DataDesligamento = document.getElementById("DMEPDataDesligamento").value;
+        ExperienciaProfissional.Cargo = document.getElementById("DMEPCargo").value;
+        ExperienciaProfissional.Senioridade = document.getElementById("DMEPSenioridade").value;
+        ExperienciaProfissional.Remuneracao = document.getElementById("DMEPRemuneracao").value;
+        ExperienciaProfissional.PorHora = document.getElementById("DMEPPorHora").value;
+        ExperienciaProfissional.Atividades = document.getElementById("DMEPAtividades").value;
+        ExperienciaProfissional.Tecnologias = document.getElementById("DMEPTecnologias").value;
+
+        ExperienciasProfTemp.push(ExperienciaProfissional);
+
+        preencherTabelaExperienciaProfissional();
+
+        fecharModalExperienciaProfissional();
+    }
+
+    function preencherTabelaExperienciaProfissional() {
+        var html =
+            '<thead>' +
+            '<tr>' +
+            '<th>Empresa</th>' +
+            '<th>Cargo</th>' +
+            '<th>Data</th>' +
+            '<th>Remuneração</th>' +
+            '<th></th>' +
+            '</tr>' +
+            '</thead>' +
+            '<tbody id="tblTbodyExperienciaProfissional">';
+
+        for (i = 0; i < ExperienciasProfTemp.length; i++) {
+            html +=
+                '<tr>' +
+                '<td>' + ExperienciasProfTemp[i].Empresa + '</td>' +
+                '<td>' + ExperienciasProfTemp[i].Cargo + '</td>' +
+                '<td>' + formatarData(ExperienciasProfTemp[i].DataAdmissao) + ' até ' + formatarData(ExperienciasProfTemp[i].DataDesligamento)+ '</td>' +
+                '<td>R$ ' + ExperienciasProfTemp[i].Remuneracao + '</td>' +
+                '<td>' +
+                '<button type="button" style="background:transparent; background-color:transparent;border:none"><i class="material-icons" style="color:black">search</i></button>' +
+                '<button type="button" style="background: transparent;border: none"><i class="material-icons" style="color:red">delete</i></button>' +
+                '</td>' +
+                '</tr>'
+        }
+
+        html += '</tbody></table>';
+
+        document.getElementById("tblExperienciaProfissional").innerHTML = html;
+        document.getElementById("tblExperienciaProfissional").style.visibility = 'visible';
+    }
+
+    function fecharModalExperienciaProfissional() {
+        document.getElementById("DMEPEmpresa").value = '';
+        document.getElementById("DMEPCidade").value = '';
+        document.getElementById("DMEPDataAdmissao").value = '';
+        document.getElementById("DMEPDataDesligamento").value = '';
+        document.getElementById("DMEPCargo").value = '';
+        document.getElementById("DMEPSenioridade").value = '';
+        document.getElementById("DMEPRemuneracao").value = '';
+        document.getElementById("DMEPPorHora").value = '';
+        document.getElementById("DMEPAtividades").value = '';
+        document.getElementById("DMEPTecnologias").value = '';
+        document.getElementById("btnExperienciaProfissionalClose").click();
+    }
 
 </script>
