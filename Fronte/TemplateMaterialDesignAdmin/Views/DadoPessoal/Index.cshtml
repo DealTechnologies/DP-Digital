@@ -5,79 +5,81 @@
                 <h2><b>Cadastro Deal Maker</b></h2>
             </div>
             <div class="body">
-                <!-- Informações do Colaborador -->
-                <div class="row clearfix">
-                    <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12">
-                        <div class="panel-group" id="accordion_1" role="tablist" aria-multiselectable="true">
-                            <div class="panel panel-col-cyan">
-                                <div class="panel-heading" role="tab" id="headingOne_1">
-                                    <h4 class="panel-title">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion_1" href="#collapseOne_1" aria-expanded="true" aria-controls="collapseOne_1">
-                                            Informações do Deal Maker
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseOne_1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne_1">
-                                    <div class="panel-body">
-                                        <partial name="~/Views/DadoPessoal/_InformacoesColaborador.cshtml" />
+                <form id="FormDealMakerAdd">
+                    <!-- Informações do Colaborador -->
+                    <div class="row clearfix">
+                        <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12">
+                            <div class="panel-group" id="accordion_1" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-col-cyan">
+                                    <div class="panel-heading" role="tab" id="headingOne_1">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion_1" href="#collapseOne_1" aria-expanded="true" aria-controls="collapseOne_1">
+                                                Informações do Deal Maker
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne_1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne_1">
+                                        <div class="panel-body">
+                                            <partial name="~/Views/DadoPessoal/_InformacoesColaborador.cshtml" />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Formação -->
-                            <div class="panel panel-col-cyan">
-                                <div class="panel-heading" role="tab" id="headingOne_2">
-                                    <h4 class="panel-title">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion_2" href="#collapseOne_2" aria-expanded="true" aria-controls="collapseOne_2">
-                                            Formação
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseOne_2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne_2">
-                                    <div class="panel-body">
-                                        <partial name="~/Views/DadoPessoal/_Formacao.cshtml" />
+                                <!-- Formação -->
+                                <div class="panel panel-col-cyan">
+                                    <div class="panel-heading" role="tab" id="headingOne_2">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion_2" href="#collapseOne_2" aria-expanded="true" aria-controls="collapseOne_2">
+                                                Formação
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne_2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne_2">
+                                        <div class="panel-body">
+                                            <partial name="~/Views/DadoPessoal/_Formacao.cshtml" />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Experiências Profissionais -->
-                            <div class="panel panel-col-cyan">
-                                <div class="panel-heading" role="tab" id="headingOne_3">
-                                    <h4 class="panel-title">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion_3" href="#collapseOne_3" aria-expanded="true" aria-controls="collapseOne_3">
-                                            Experiências Profissionais
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseOne_3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne_3">
-                                    <div class="panel-body">
-                                        <partial name="~/Views/DadoPessoal/_ExperienciaProfissinal.cshtml" />
+                                <!-- Experiências Profissionais -->
+                                <div class="panel panel-col-cyan">
+                                    <div class="panel-heading" role="tab" id="headingOne_3">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion_3" href="#collapseOne_3" aria-expanded="true" aria-controls="collapseOne_3">
+                                                Experiências Profissionais
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne_3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne_3">
+                                        <div class="panel-body">
+                                            <partial name="~/Views/DadoPessoal/_ExperienciaProfissinal.cshtml" />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Certificações -->
-                            <div class="panel panel-col-cyan">
-                                <div class="panel-heading" role="tab" id="headingOne_4">
-                                    <h4 class="panel-title">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion_4" href="#collapseOne_4" aria-expanded="true" aria-controls="collapseOne_4">
-                                            Cursos e Certificações
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseOne_4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne_4">
-                                    <div class="panel-body">                                        
-                                        <partial name="~/Views/DadoPessoal/_Certificacoes.cshtml" />
+                                <!-- Certificações -->
+                                <div class="panel panel-col-cyan">
+                                    <div class="panel-heading" role="tab" id="headingOne_4">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion_4" href="#collapseOne_4" aria-expanded="true" aria-controls="collapseOne_4">
+                                                Cursos e Certificações
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne_4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne_4">
+                                        <div class="panel-body">
+                                            <partial name="~/Views/DadoPessoal/_Certificacoes.cshtml" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="clearfix">
-                            <button class="btn bg-greenNew waves-effect right" type="submit" style="margin-left:10px">Enviar</button>
-                            <button class="btn btn-default waves-effect right" type="submit">Limpar</button>
+                            <div class="clearfix">
+                                <button type="button" class="btn bg-greenNew waves-effect right"  style="margin-left:10px">Enviar</button>
+                                <button type="button" class="btn btn-default waves-effect right">Limpar</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
