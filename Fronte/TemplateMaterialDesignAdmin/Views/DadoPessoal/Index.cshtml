@@ -89,6 +89,15 @@
     var DependetesTemp = [];
     var CertificacoesTemp = [];
 
+    function formatarData(data) {
+        var partesData = data.split("-");
+        var partesDia = partesData[2].split("T");
+        var dia = partesDia[0];
+        var mes = partesData[1];
+        var ano = partesData[0];
+        return dia + "/" + mes + "/" + ano;
+    }
+
     function getFormData() {
         var DadosSociais = new Object();
         DadosSociais.NomeCompleto = document.getElementById("DMDSNomeCompleto").value;
@@ -186,8 +195,45 @@
         Dependente.DataNascimento = document.getElementById("DMDPDataNascimento").value;
         Dependente.EstadoNascimento = document.getElementById("DMDPEstadoNascimento").value;
         Dependente.Nacionalidade = document.getElementById("DMDPNacionalidade").value;
+
         DependetesTemp.push(Dependente);
+
+        preencherTabelaDependentes();
+
         fecharModalDependentes();
+    }
+
+    function preencherTabelaDependentes() {
+        var html =
+            '<thead>' +
+            '<tr>' +
+            '<th>Nome</th>' +
+            '<th>Dependente</th>' +
+            '<th>Data</th>' +
+            '<th>Nacionalidade</th>' +
+            '<th></th>' +
+            '</tr>' +
+            '</thead>' + 
+            '<tbody id="tblTbodyDependentes">';
+
+        for (i = 0; i < DependetesTemp.length; i++) {
+            html +=
+                '<tr>' +
+                '<td>' + DependetesTemp[i].NomeCompleto + '</td>' +
+                '<td>' + DependetesTemp[i].GrauParentesco + '</td>' +
+                '<td>' + formatarData(DependetesTemp[i].DataNascimento) + '</td>' +
+                '<td>' + DependetesTemp[i].Nacionalidade + '</td>' +
+                '<td>' +
+                '<button type="button" style="background:transparent; background-color:transparent;border:none"><i class="material-icons" style="color:black">search</i></button>' +
+                '<button type="button" style="background: transparent;border: none"><i class="material-icons" style="color:red">delete</i></button>' +
+                '</td>' +
+                '</tr>'
+        }
+
+        html += '</tbody></table>';
+
+        document.getElementById("tblDependentes").innerHTML = html;
+        document.getElementById("tblDependentes").style.visibility = 'visible';
     }
 
     function fecharModalDependentes() {
