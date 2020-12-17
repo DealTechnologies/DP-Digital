@@ -228,7 +228,7 @@
             '<th></th>' +
             '</tr>' +
             '</thead>' + 
-            '<tbody id="tblTbodyDependentes">';
+            '<tbody>';
 
         for (i = 0; i < DependetesTemp.length; i++) {
             html +=
@@ -291,7 +291,7 @@
             '<th></th>' +
             '</tr>' +
             '</thead>' +
-            '<tbody id="tblTbodyExperienciaProfissional">';
+            '<tbody>';
 
         for (i = 0; i < ExperienciasProfTemp.length; i++) {
             html +=
@@ -327,4 +327,64 @@
         document.getElementById("btnExperienciaProfissionalClose").click();
     }
 
+    function adicionarCertificacao() {
+        var Certificacao = new Object();
+        Certificacao.NomeCurso = document.getElementById("DMCENomeCurso").value;
+        Certificacao.Emissor = document.getElementById("DMCEEmissor").value;
+        Certificacao.Instituicao = document.getElementById("DMCEInstituicao").value;
+        Certificacao.DataInicio = document.getElementById("DMCEDataInicio").value;
+        Certificacao.DataConclusao = document.getElementById("DMCEDataConclusao").value;
+        Certificacao.CargaHoraria = document.getElementById("DMCECargaHoraria").value;
+        Certificacao.DiplomaCertificado = document.getElementById("DMCEDiplomaCertificado").value;
+
+        CertificacoesTemp.push(Certificacao);
+
+        preencherTabelaCertificacoes();
+
+        fecharModalCertificacao();
+    }
+
+    function preencherTabelaCertificacoes() {
+        var html =
+            '<thead>' +
+            '<tr>' +
+            '<th>Curso</th>' +
+            '<th>Emissor</th>' +
+            '<th>Data</th>' +
+            '<th>Arquivos</th>' +
+            '<th></th>' +
+            '</tr>' +
+            '</thead>' +
+            '<tbody>';
+
+        for (i = 0; i < CertificacoesTemp.length; i++) {
+            html +=
+                '<tr>' +
+                '<td>' + CertificacoesTemp[i].NomeCurso + '</td>' +
+                '<td>' + CertificacoesTemp[i].Emissor + '</td>' +
+                '<td>' + formatarData(CertificacoesTemp[i].DataInicio) + ' até ' + formatarData(CertificacoesTemp[i].DataConclusao) + '</td>' +
+                '<td>1 arquivo anexado</td>' +
+                '<td>' +
+                '<button type="button" style="background:transparent; background-color:transparent;border:none"><i class="material-icons" style="color:black">search</i></button>' +
+                '<button type="button" style="background: transparent;border: none"><i class="material-icons" style="color:red">delete</i></button>' +
+                '</td>' +
+                '</tr>'
+        }
+
+        html += '</tbody></table>';
+
+        document.getElementById("tblCertificacoes").innerHTML = html;
+        document.getElementById("tblCertificacoes").style.visibility = 'visible';
+    }
+
+    function fecharModalCertificacao() {
+        document.getElementById("DMCENomeCurso").value = '';
+        document.getElementById("DMCEEmissor").value = '';
+        document.getElementById("DMCEInstituicao").value = '';
+        document.getElementById("DMCEDataInicio").value = '';
+        document.getElementById("DMCEDataConclusao").value = '';
+        document.getElementById("DMCECargaHoraria").value = '';
+        document.getElementById("DMCEDiplomaCertificado").value = '';
+        document.getElementById("btnCertificacaoClose").click();
+    }
 </script>
