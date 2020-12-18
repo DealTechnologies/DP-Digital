@@ -424,3 +424,7 @@ _[Ss]cripts
 *.nupkg
 *.ncrunchsolution
 *.dot[Cc]over
+*.dll
+Fronte/TemplateMaterialDesignAdmin/obj/Debug/netcoreapp3.1/TemplateMaterialDesignAdmin.Views.dll
+Fronte/TemplateMaterialDesignAdmin/obj/Debug/netcoreapp3.1/TemplateMaterialDesignAdmin.Views.pdb
+Fronte/TemplateMaterialDesignAdmin/obj/Debug/netcoreapp3.1/TemplateMaterialDesignAdmin.Views.pdb
