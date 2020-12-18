@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using TemplateMaterialDesignAdmin.Models.Colaborador;
+using TemplateMaterialDesignAdmin.Models.DealMaker;
 using TemplateMaterialDesignAdmin.Models.DealMaker.Commads;
 using TemplateMaterialDesignAdmin.Models.Results;
 using TemplateMaterialDesignAdmin.Services.Interfaces;
@@ -27,15 +28,15 @@ namespace TemplateMaterialDesignAdmin.Controllers
         {
             CommandResult result = _colaboradorService.ObterTodos().GetAwaiter().GetResult();
 
-            List<Colaborador> colaboradores = new List<Colaborador>();
+            List<DealMaker> dealMakers = new List<DealMaker>();
 
             if (result.Sucesso)
             {
                 var json = JsonConvert.SerializeObject(result.Data);
-                colaboradores = JsonConvert.DeserializeObject<List<Colaborador>>(json);
+                dealMakers = JsonConvert.DeserializeObject<List<DealMaker>>(json);
             }
 
-            return View(colaboradores);
+            return View(dealMakers);
         }
 
         [HttpPost]
