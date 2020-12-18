@@ -37,7 +37,6 @@ namespace TemplateMaterialDesignAdmin.Controllers
             return View(colaboradores);
         }
 
-        // POST: ColaboradorController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
