@@ -92,12 +92,15 @@
     var CertificacoesTemp = [];
 
     function formatarData(data) {
-        var partesData = data.split("-");
-        var partesDia = partesData[2].split("T");
-        var dia = partesDia[0];
-        var mes = partesData[1];
-        var ano = partesData[0];
-        return dia + "/" + mes + "/" + ano;
+        if (data != "" && data != undefined && data != null) {
+            var partesData = data.split("-");
+            var partesDia = partesData[2].split("T");
+            var dia = partesDia[0];
+            var mes = partesData[1];
+            var ano = partesData[0];
+            return dia + "/" + mes + "/" + ano;
+        }
+        else return "";
     }
 
     function getFormData() {
@@ -299,7 +302,7 @@
                 '<td>' + FormacoesTemp[i].Curso + '</td>' +
                 '<td>' + FormacoesTemp[i].Tipo + '</td>' +
                 '<td>' + FormacoesTemp[i].Instituicao + '</td>' +
-                '<td>' + formatarData(FormacoesTemp[i].DataInicio) + 'até' + formatarData(FormacoesTemp[i].DataConclusao) + '</td>' +
+                '<td>' + formatarData(FormacoesTemp[i].DataInicio) + ' ' + formatarData(FormacoesTemp[i].DataConclusao) + '</td>' +
                 '<td>' + FormacoesTemp[i].TotalHoras + '</td>' +
                 '<td>' +
                 '<button type="button" style="background:transparent; background-color:transparent;border:none"><i class="material-icons" style="color:black">search</i></button>' +
@@ -365,7 +368,7 @@
                 '<tr>' +
                 '<td>' + ExperienciasProfTemp[i].Empresa + '</td>' +
                 '<td>' + ExperienciasProfTemp[i].Cargo + '</td>' +
-                '<td>' + formatarData(ExperienciasProfTemp[i].DataAdmissao) + ' até ' + formatarData(ExperienciasProfTemp[i].DataDesligamento)+ '</td>' +
+                '<td>' + formatarData(ExperienciasProfTemp[i].DataAdmissao) + ' ' + formatarData(ExperienciasProfTemp[i].DataDesligamento)+ '</td>' +
                 '<td>R$ ' + ExperienciasProfTemp[i].Remuneracao + '</td>' +
                 '<td>' +
                 '<button type="button" style="background:transparent; background-color:transparent;border:none"><i class="material-icons" style="color:black">search</i></button>' +
@@ -430,7 +433,7 @@
                 '<tr>' +
                 '<td>' + CertificacoesTemp[i].NomeCurso + '</td>' +
                 '<td>' + CertificacoesTemp[i].Emissor + '</td>' +
-                '<td>' + formatarData(CertificacoesTemp[i].DataInicio) + ' até ' + formatarData(CertificacoesTemp[i].DataConclusao) + '</td>' +
+                '<td>' + formatarData(CertificacoesTemp[i].DataInicio) + ' ' + formatarData(CertificacoesTemp[i].DataConclusao) + '</td>' +
                 '<td>1 arquivo anexado</td>' +
                 '<td>' +
                 '<button type="button" style="background:transparent; background-color:transparent;border:none"><i class="material-icons" style="color:black">search</i></button>' +
