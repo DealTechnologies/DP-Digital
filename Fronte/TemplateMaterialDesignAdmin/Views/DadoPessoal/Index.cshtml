@@ -117,8 +117,8 @@
         DadosSociais.TelefoneRecado = document.getElementById("DMDSTelefoneRecado").value;
         DadosSociais.Sexo = document.getElementById("DMDSSexo").value;
         DadosSociais.EstadoCivil = document.getElementById("DMDSEstadoCivil").value;
-        DadosSociais.PossuiDeficiencia = document.getElementById("DMDSPossuiDeficiencia").value;
-        DadosSociais.PossuiDependentes = document.getElementById("DMMSPossuiDependentes").value;
+        DadosSociais.PossuiDeficiencia = document.getElementById("DMDSPossuiDeficiencia").checked;
+        DadosSociais.PossuiDependentes = document.getElementById("DMMSPossuiDependentes").checked;
         DadosSociais.NomeMae = document.getElementById("DMDSNomeMae").value;
         DadosSociais.NomePai = document.getElementById("DMDSNomePai").value;
         DadosSociais.NomeConjugue = document.getElementById("DMDSNomeConjugue").value;
@@ -154,11 +154,11 @@
         var PIS = new Object();
         PIS.Arquivo = document.getElementById("DMPISArquivo").value;
         PIS.Numero = document.getElementById("DMPISNumero").value;
-        PIS.PrimeiroEmprego = document.getElementById("DMPISPrimeiroEmprego").value;
+        PIS.PrimeiroEmprego = document.getElementById("DMPISPrimeiroEmprego").checked;
 
         var Naturalidade = new Object();
         Naturalidade.Nacionalidade = document.getElementById("DMNNacionalidade").value;
-        Naturalidade.Naturalizado = document.getElementById("DMNNaturalizado").value;
+        Naturalidade.Naturalizado = document.getElementById("DMNNaturalizado").checked;
         Naturalidade.UfNascimento = document.getElementById("DMNUfNascimento").value;
         Naturalidade.CidadeNascimento = document.getElementById("DMNCidadeNascimento").value;
         Naturalidade.ClassificacaoEstrangeiro = document.getElementById("DMNClassificacaoEstrangeiro").value;
@@ -339,7 +339,7 @@
         ExperienciaProfissional.Cargo = document.getElementById("DMEPCargo").value;
         ExperienciaProfissional.Senioridade = document.getElementById("DMEPSenioridade").value;
         ExperienciaProfissional.Remuneracao = document.getElementById("DMEPRemuneracao").value;
-        ExperienciaProfissional.PorHora = document.getElementById("DMEPPorHora").value;
+        ExperienciaProfissional.PorHora = document.getElementById("DMEPPorHora").checked;
         ExperienciaProfissional.Atividades = document.getElementById("DMEPAtividades").value;
         ExperienciaProfissional.Tecnologias = document.getElementById("DMEPTecnologias").value;
 
