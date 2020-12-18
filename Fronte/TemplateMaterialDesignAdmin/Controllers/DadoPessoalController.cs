@@ -39,7 +39,6 @@ namespace TemplateMaterialDesignAdmin.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult Create(DealMakerInsertCommand data)
         {
             return RedirectToAction("Index", "Home");
