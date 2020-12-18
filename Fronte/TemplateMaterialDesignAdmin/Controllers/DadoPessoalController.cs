@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using TemplateMaterialDesignAdmin.Models.Colaborador;
@@ -36,9 +37,12 @@ namespace TemplateMaterialDesignAdmin.Controllers
             return View(colaboradores);
         }
 
-        public IActionResult Create()
+        // POST: ColaboradorController/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(IFormCollection collection)
         {
-            return View();
+            return RedirectToAction("Index", "Home");
         }
     }
 }
