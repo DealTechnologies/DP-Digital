@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using TemplateMaterialDesignAdmin.Models.Colaborador;
+using TemplateMaterialDesignAdmin.Models.DealMaker.Commads;
 using TemplateMaterialDesignAdmin.Models.Results;
 using TemplateMaterialDesignAdmin.Services.Interfaces;
 
@@ -39,7 +40,7 @@ namespace TemplateMaterialDesignAdmin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(DealMakerInsertCommand data)
         {
             return RedirectToAction("Index", "Home");
         }

@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace TemplateMaterialDesignAdmin.Models.DealMaker
+namespace TemplateMaterialDesignAdmin.Models.DealMaker.Commads
 {
-    public class DealMaker
+    public class DealMakerInsertCommand
     {
-        public Guid Id { get; set; }
         public DadosSociais DadosSociais { get; set; }
-        public Documento Documento  { get; set; }
+        public Documento Documento { get; set; }
         public CarteiraTrabalho CarteiraTrabalho { get; set; }
         public TituloEleitor TituloEleitor { get; set; }
         public PIS PIS { get; set; }

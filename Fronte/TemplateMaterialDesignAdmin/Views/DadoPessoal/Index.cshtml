@@ -200,7 +200,7 @@
         DealMaker.ExperienciasProfissionais = ExperienciasProfissionais;
         DealMaker.Certificacoes = Certificacoes;
 
-        console.log(DealMaker);
+        submitarForm(DealMaker);
     }
 
     function adicionarDependente() {
@@ -457,5 +457,21 @@
         document.getElementById("DMCEDiplomaCertificado").value = '';
 
         if(clicar) document.getElementById("btnCertificacaoClose").click();
+    }
+
+    function submitarForm(data) {
+        console.log(data);
+        $.ajax(
+            {
+                url: '/DadoPessoal/Create/',
+                type: 'POST',
+                data: JSON.stringify(data),
+                dataType: 'json',
+                contentType: 'application/json',
+                async: false,
+                success: function (data) {
+                    alert("Sucesso!");
+                }
+            });
     }
 </script>
