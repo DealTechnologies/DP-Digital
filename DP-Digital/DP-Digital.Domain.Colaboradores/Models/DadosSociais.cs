@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace TemplateMaterialDesignAdmin.Models.DealMaker
+namespace DP_Digital.Domain.Colaboradores.Models
 {
     public class DadosSociais
     {

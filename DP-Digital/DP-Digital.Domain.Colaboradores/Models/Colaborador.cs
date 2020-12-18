@@ -6,7 +6,7 @@ using System.Text;
 
 namespace DP_Digital.Domain.Colaboradores.Models
 {
-    public class Colaborador : Pessoa
+    public class Colaborador 
     {
         public Colaborador()
         {
@@ -20,24 +20,17 @@ namespace DP_Digital.Domain.Colaboradores.Models
 
         [BsonId]
         public Guid Id { get; private set; }
-        public EEstadoCivil EstadoCivil { get; set; }
-        public ENacionalidade Nacionalidade { get; set; }
-        public bool Naturalizacao { get; set; }
-        public bool ResideNoBrasil { get; set; }
-        public string UFNaturalidade { get; set; }
-        public string CidadeNaturalidade { get; set; }
-        public string NomeDaMae { get; set; }
-        public string NomeDoPai { get; set; }
-        public string NomeConjuge { get; set; }
-        public bool PossuiDependente { get; set; }
-        public bool PossuiDeficiencia { get; set; }
-        public string CPF { get; set; }
-        public string Identidade { get; set; }
-        public DateTime DataDeEmissao { get; set; }
-        public string OrgaoEmissor { get; set; }
-        public string NumeroPIS { get; set; }
-
-        public List<Dependentes> ListaDeDependentes { get; set; }
-        public List<Documentos> ListaDeDocumentos { get; set; }
+        public DadosSociais DadosSociais { get; set; }
+        public Documento Documento { get; set; }
+        public CarteiraTrabalho CarteiraTrabalho { get; set; }
+        public TituloEleitor TituloEleitor { get; set; }
+        public PIS PIS { get; set; }
+        public Naturalidade Naturalidade { get; set; }
+        public RedesSociais RedesSociais { get; set; }
+        public DadosFisicos DadosFisicos { get; set; }
+        public List<Dependente> Dependentes { get; set; }
+        public List<Formacao> Formacoes { get; set; }
+        public List<ExperienciaProfissional> ExperienciasProfissionais { get; set; }
+        public List<Certificacao> Certificacoes { get; set; }
     }
 }

@@ -460,18 +460,20 @@
     }
 
     function submitarForm(data) {
+
         console.log(data);
-        $.ajax(
-            {
-                url: '/DadoPessoal/Create/',
-                type: 'POST',
-                data: JSON.stringify(data),
-                dataType: 'json',
-                contentType: 'application/json',
-                async: false,
-                success: function (data) {
-                    alert("Sucesso!");
-                }
+
+        var DealMaker = new Object();
+        DealMaker = data;
+
+        console.log(DealMaker);
+
+        $.post('/DadoPessoal/Create/', DealMaker)
+            .done(function (response) {
+                //alert("Sucesso!");
+            }).fail(function (error) {
+                //alert("Falha!");
             });
     }
+
 </script>

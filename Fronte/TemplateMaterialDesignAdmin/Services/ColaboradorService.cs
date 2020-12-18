@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using TemplateMaterialDesignAdmin.Models.Colaborador.Commands;
+using TemplateMaterialDesignAdmin.Models.DealMaker.Commads;
 using TemplateMaterialDesignAdmin.Models.Results;
 using TemplateMaterialDesignAdmin.Services.Interfaces;
 
@@ -19,7 +20,7 @@ namespace TemplateMaterialDesignAdmin.Services
             _settings = options.Value;
         }
 
-        public async Task<CommandResult> Inserir(ColaboradorInserirCommand command)
+        public async Task<CommandResult> Inserir(DealMakerInsertCommand command)
         {
             try
             {
@@ -46,7 +47,7 @@ namespace TemplateMaterialDesignAdmin.Services
             }
         }
 
-        public async Task<CommandResult> Atualizar(ColaboradorAtualizarCommand command)
+        public async Task<CommandResult> Atualizar(DealMakerInsertCommand command)
         {
             throw new NotImplementedException();
         }
