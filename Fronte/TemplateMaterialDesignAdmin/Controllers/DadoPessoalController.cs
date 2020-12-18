@@ -41,6 +41,8 @@ namespace TemplateMaterialDesignAdmin.Controllers
         [HttpPost]
         public ActionResult Create(DealMakerInsertCommand data)
         {
+            _colaboradorService.Inserir(data).GetAwaiter().GetResult();
+
             return RedirectToAction("Index", "Home");
         }
     }

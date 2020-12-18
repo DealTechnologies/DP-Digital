@@ -51,7 +51,7 @@ namespace DP_Digital.Infra.Colaboradores.Repositorys
         {
             var collection = _mongoDBContext.MongoDBConexao.GetCollection<Colaborador>(_collection);
 
-            Expression<Func<Colaborador, bool>> filter = x => x.NomeCompleto.ToUpper() == nome.ToUpper();
+            Expression<Func<Colaborador, bool>> filter = x => x.DadosSociais.NomeCompleto.ToUpper() == nome.ToUpper();
 
             var retorno = await collection.FindAsync<Colaborador>(filter);
 
@@ -62,7 +62,7 @@ namespace DP_Digital.Infra.Colaboradores.Repositorys
         {
             var collection = _mongoDBContext.MongoDBConexao.GetCollection<Colaborador>(_collection);
 
-            Expression<Func<Colaborador, bool>> filter = x => x.CPF.ToUpper() == cpf.ToUpper();
+            Expression<Func<Colaborador, bool>> filter = x => x.Documento.Numero.ToUpper() == cpf.ToUpper();
 
             var retorno = await collection.FindAsync<Colaborador>(filter);
 
