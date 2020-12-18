@@ -9,7 +9,7 @@ namespace TemplateMaterialDesignAdmin.Models.DealMaker
         public string DataNascimento { get; set; }
         public string Foto { get; set; }
         public string Email { get; set; }
-        public string DDDTelefonePessoa { get; set; }
+        public string DDDTelefonePessoal { get; set; }
         public string TelefonePessoal { get; set; }
         public string ContatoRecado { get; set; }
         public string DDDTelefoneRecado { get; set; }
