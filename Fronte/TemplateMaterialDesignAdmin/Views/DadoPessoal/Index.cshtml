@@ -460,19 +460,11 @@
     }
 
     function submitarForm(data) {
-
-        console.log(data);
-
-        var DealMaker = new Object();
-        DealMaker = data;
-
-        console.log(DealMaker);
-
-        $.post('/DadoPessoal/Create/', DealMaker)
+        $.post('/DadoPessoal/Create/', data)
             .done(function (response) {
-                //alert("Sucesso!");
+                window.location.href = "Home/Index"
             }).fail(function (error) {
-                //alert("Falha!");
+                alert("Erro ao cadastrar Deal Maker!");
             });
     }
 
