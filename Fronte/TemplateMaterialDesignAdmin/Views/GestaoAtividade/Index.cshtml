@@ -1,261 +1,252 @@
-﻿
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-
-<div class="content clearfix">
-    <div class="body">
-        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-            <div class="card">
-                <div class="header">
-                    <h3 class="align-left"><b>Gestão de Atividades</b></h3>
-                </div>
-                <div class="body">
-                    <div class="row clearfix">
-                        <div class="col-sm-8">
-                            <div class="row clearfix">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <div class="form-line">
-                                            <select id="slcPED" class="form-control show-tick selectpicker">
-                                                <option>Selecione a PED</option>
-                                                <option>PED 1</option>
-                                                <option>PED 2</option>
-                                                <option>PED 3</option>
-                                                <option>PED 4</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="row clearfix">
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <div>
-                                                <div class="form-line">
-                                                    <label>Entrada</label>
-                                                </div>
-
-                                                <div>
-                                                    <input type="checkbox" id="HorarioEntradaPadrao">
-                                                    <label for="HorarioEntradaPadrao">Padrão (09:00h GMT-3)</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row clearfix">
-                                    <div class="col-sm-4">
-                                        @*<label>Personalizar</label>*@
-                                        <div class="form-group">
-                                            <div>
-                                                <input type="checkbox" id="PersonalizarHorarioEntrada">
-                                                <label for="PersonalizarHorarioEntrada">Personalizar</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <label>Horario De Entrada</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input class="form-control" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <label>Horario de saida</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input class="form-control" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <hr />
-
-                            <div class="col-sm-12">
-                                <div class="row clearfix">
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <div>
-                                                <div class="form-line">
-                                                    <label>Intervalo</label>
-                                                </div>
-
-                                                <div>
-                                                    <input type="checkbox" id="HorarioIntervaloPadrao">
-                                                    <label for="HorarioIntervaloPadrao">Padrão (12:00h - 13:00h GMT-3)</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row clearfix">
-                                    <div class="col-sm-4">
-                                        @*<label>Personalizar</label>*@
-                                        <div class="form-group">
-                                            <div>
-                                                <input type="checkbox" id="PersonalizarHorarioIntervalo">
-                                                <label for="PersonalizarHorarioIntervalo">Personalizar</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <label>Horario De Entrada</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input class="form-control" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <label>Horario de saida</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input class="form-control" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <hr />
-
-                            <div class="col-sm-12">
-                                <div class="row clearfix">
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <div>
-                                                <div class="form-line">
-                                                    <label>Entrada</label>
-                                                </div>
-
-                                                <div>
-                                                    <input type="checkbox" id="HorarioSaidaPadrao">
-                                                    <label for="HorarioSaidaPadrao">Padrão (17:00h GMT-3)</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row clearfix">
-                                    <div class="col-sm-4">
-                                        @*<label>Personalizar</label>*@
-                                        <div class="form-group">
-                                            <div>
-                                                <input type="checkbox" id="PersonalizarHorarioSaida">
-                                                <label for="PersonalizarHorarioSaida">Personalizar</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <label>Horario De Entrada</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input class="form-control" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <label>Horario de saida</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input class="form-control" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class="col-sm-4">
-                            @*<label>Selecione a(s) Data(s)</label>*@
-                            <div id="demo-range-selection"></div>
-                        </div>
-
-                    </div>
-                    <div class="clearfix">
-                        <button type="button" onclick="" class="btn bg-greenNew waves-effect right" style="margin-left:10px">Registrar</button>
-                        <button type="button" data-toggle="modal" data-target="#largeModalEditarPadroes" class="btn bg-greenNew waves-effect right" style="position: relative;float: right;">Editar Padrões</button>
-
-                    </div>
-
-                </div>
-
+﻿<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <div class="card">
+            <div class="header">
+                <h3 class="align-left"><b>Gestão de Atividades</b></h3>
             </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <div class="card">
-                <div class="body">
-                    <h3 class="align-left"><b>Histórico</b></h3>
-                </div>
-                <div class="body">
-                    <div class="row clearfix">
+            <div class="body">
+                <div class="row clearfix">
+                    <div class="col-sm-8">
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <select id="slcPED" class="form-control show-tick selectpicker">
+                                            <option>Selecione a PED</option>
+                                            <option>PED 1</option>
+                                            <option>PED 2</option>
+                                            <option>PED 3</option>
+                                            <option>PED 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-sm-12">
                             <div class="row clearfix">
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <div class="form-line">
-                                            <select id="slcMes" class="form-control show-tick selectpicker">
-                                                <option>Selecione o Mês</option>
-                                                <option>Mês 1/2020</option>
-                                                <option>Mês 2/2020</option>
-                                                <option>Mês 3/2020</option>
-                                                <option>Mês 4/2020</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <h2>Total de Horas - 92 / 168 H</h2>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                                                70%
+                                        <div>
+                                            <div class="form-line">
+                                                <label>Entrada</label>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <h2>Horas não Lançadas - 92 / 168 H</h2>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-                                                30%
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <h2>Horas Aprovadas - 92 / 168 H</h2>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:45%">
-                                                45%
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <h2>Horas Pendentes - 92 / 168 H</h2>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:55%">
-                                                55%
+
+                                            <div>
+                                                <input type="checkbox" id="HorarioEntradaPadrao">
+                                                <label for="HorarioEntradaPadrao">Padrão (09:00h GMT-3)</label>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
+                            <div class="row clearfix">
+                                <div class="col-sm-4">
+                                    @*<label>Personalizar</label>*@
+                                    <div class="form-group">
+                                        <div>
+                                            <input type="checkbox" id="PersonalizarHorarioEntrada">
+                                            <label for="PersonalizarHorarioEntrada">Personalizar</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label>Horario De Entrada</label>
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input class="form-control" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label>Horario de saida</label>
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input class="form-control" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+                        <hr />
+
+                        <div class="col-sm-12">
+                            <div class="row clearfix">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <div>
+                                            <div class="form-line">
+                                                <label>Intervalo</label>
+                                            </div>
+
+                                            <div>
+                                                <input type="checkbox" id="HorarioIntervaloPadrao">
+                                                <label for="HorarioIntervaloPadrao">Padrão (12:00h - 13:00h GMT-3)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row clearfix">
+                                <div class="col-sm-4">
+                                    @*<label>Personalizar</label>*@
+                                    <div class="form-group">
+                                        <div>
+                                            <input type="checkbox" id="PersonalizarHorarioIntervalo">
+                                            <label for="PersonalizarHorarioIntervalo">Personalizar</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label>Horario De Entrada</label>
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input class="form-control" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label>Horario de saida</label>
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input class="form-control" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <hr />
+
+                        <div class="col-sm-12">
+                            <div class="row clearfix">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <div>
+                                            <div class="form-line">
+                                                <label>Entrada</label>
+                                            </div>
+
+                                            <div>
+                                                <input type="checkbox" id="HorarioSaidaPadrao">
+                                                <label for="HorarioSaidaPadrao">Padrão (17:00h GMT-3)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row clearfix">
+                                <div class="col-sm-4">
+                                    @*<label>Personalizar</label>*@
+                                    <div class="form-group">
+                                        <div>
+                                            <input type="checkbox" id="PersonalizarHorarioSaida">
+                                            <label for="PersonalizarHorarioSaida">Personalizar</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label>Horario De Entrada</label>
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input class="form-control" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label>Horario de saida</label>
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input class="form-control" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        @*<label>Selecione a(s) Data(s)</label>*@
+                        <div id="demo-range-selection"></div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <button type="button" onclick="" class="btn bg-greenNew waves-effect right" style="margin-left:10px">Registrar</button>
+                    <button type="button" data-toggle="modal" data-target="#largeModalEditarPadroes" class="btn bg-greenNew waves-effect right" style="position: relative;float: right;">Editar Padrões</button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="card">
+            <div class="header">
+                <h3 class="align-left"><b>Histórico</b></h3>
+            </div>
+            <div class="body">
+                <div class="row clearfix">
+                    <div class="col-sm-12">
+                        <div class="row clearfix">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <select id="slcMes" class="form-control show-tick selectpicker">
+                                            <option>Selecione o Mês</option>
+                                            <option>Mês 1/2020</option>
+                                            <option>Mês 2/2020</option>
+                                            <option>Mês 3/2020</option>
+                                            <option>Mês 4/2020</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <h2>Total de Horas - 92 / 168 H</h2>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                            70%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <h2>Horas não Lançadas - 92 / 168 H</h2>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                                            30%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <h2>Horas Aprovadas - 92 / 168 H</h2>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:45%">
+                                            45%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <h2>Horas Pendentes - 92 / 168 H</h2>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:55%">
+                                            55%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -263,9 +254,11 @@
     </div>
 </div>
 
+
 <partial name="~/Views/GestaoAtividade/_EditarPadroes.cshtml" />
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 <script>
 
     mobiscroll.setOptions({
