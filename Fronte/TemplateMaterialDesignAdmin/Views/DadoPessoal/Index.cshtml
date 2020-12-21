@@ -103,6 +103,22 @@
         else return "";
     }
 
+    function getBase64(file) {
+        if (file != null && file != undefined && file != "") {
+            var reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = function () {
+                console.log(reader.result);
+            };
+            reader.onerror = function (error) {
+                console.log('Error: ', error);
+            };
+        }
+        else {
+            return "";
+        }
+    }
+
     function getFormData() {
         var DadosSociais = new Object();
         DadosSociais.NomeCompleto = document.getElementById("DMDSNomeCompleto").value;
